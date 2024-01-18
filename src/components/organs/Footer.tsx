@@ -1,5 +1,5 @@
 import { Image } from "../atoms/Image";
-import logo from "../../assets/tbc_logo/TBC-Logo.png";
+import logo from "../../assets/tbc_logo/logo1.png";
 import { Text } from "../atoms/Text";
 import { List } from "../atoms/List";
 import { Link } from "react-router-dom";
@@ -11,13 +11,13 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col bg-color1">
+    <footer id="CONTACT" className="w-full flex flex-col bg-gradient-to-t from-black via-black to-red-500">
       <section className="w-full h-auto grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6 py-16 gap-7 md:gap-4 lg:gap-0">
         {/* TBC Logo */}
         <div className="flex flex-col items-start gap-4">
-          <Image className="w-38" image={logo} alt="Logo" as="a" href="/" />
+          <Image className="w-38 text-white" image={logo} alt="Logo" as="a" href="/" />
           <div className="flex flex-col md:items-center  md:mt-1. ml-2">
-            <Text className="text-sm text-color4" as="p">
+            <Text className="text-sm  font-semibold bg-gradient-to-r from-white to-red-500 text-transparent bg-clip-text" as="p">
               We build tomorrow's technology today, empowering businesses to
               navigate the digital landscape with confidence.
             </Text>
@@ -33,7 +33,7 @@ const Footer = () => {
             <List className="text-sm">
               <Link
                 to={"/"}
-                className="text-color4 transition-all duration-300 hover:underline"
+                className=" transition-all duration-300 hover:underlin font-bold bg-gradient-to-r from-blue-500 to-white text-transparent bg-clip-text"
               >
                 Home
               </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
             <List className="text-sm">
               <Link
                 to={"/"}
-                className="text-color4 transition-all duration-300 hover:underline"
+                className="text-color4 transition-all duration-300 hover:underline font-bold bg-gradient-to-r from-blue-500 to-white text-transparent bg-clip-text"
               >
                 Services
               </Link>
@@ -58,7 +58,7 @@ const Footer = () => {
             <List className="text-sm">
               <Link
                 to={"/"}
-                className="text-color4 transition-all duration-300 hover:underline"
+                className="text-color4 transition-all duration-300 hover:underline font-bold bg-gradient-to-r from-blue-500 to-white text-transparent bg-clip-text"
               >
                 Contact Us
               </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
             <List className="text-sm">
               <Link
                 to={"/"}
-                className="text-color4 transition-all duration-300 hover:underline"
+                className="text-color4 transition-all duration-300 hover:underline font-bold bg-gradient-to-r from-blue-500 to-white text-transparent bg-clip-text"
               >
                 Call
               </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
             <List className="text-sm">
               <Link
                 to={"/"}
-                className="text-color4 transition-all duration-300 hover:underline"
+                className="text-color4 transition-all duration-300 hover:underline font-bold bg-gradient-to-r from-blue-500 to-white text-transparent bg-clip-text"
               >
                 Mobile App Development
               </Link>
@@ -91,7 +91,7 @@ const Footer = () => {
             <List className="text-sm">
               <Link
                 to={"/"}
-                className="text-color4 transition-all duration-300 hover:underline"
+                className="text-color4 transition-all duration-300 hover:underline font-bold bg-gradient-to-r from-blue-500 to-white text-transparent bg-clip-text"
               >
                 AD Technologies
               </Link>
@@ -135,7 +135,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <hr />
-      <Text className="text-center bg-color1 text-white text-xs py-6 font-light">
+      <Text className="text-center  text-white text-xs py-6 font-light">
         Copyright 2023. TBC Technologies. All rights reserved.
       </Text>
       <hr />

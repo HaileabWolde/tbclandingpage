@@ -25,7 +25,7 @@ export const Card = ({
 }: CardProps) => {
   return (
     <>
-      <div className={cardClass} {...rest} style={{ marginRight: "25px" }}>
+      <div className={cardClass} {...rest} >
         <Image
           className={imageWrapperClass}
           objectCover={cover}

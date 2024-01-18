@@ -11,8 +11,11 @@ type ImageProps<T extends React.ElementType> = ImageOwnProps<T> & Omit<React.Com
 export const Image = <T extends React.ElementType = 'div'>({ className, image, alt, objectCover, as, ...rest }: ImageProps<T>) => {
     const Component = as || 'div'
     return (
-        <Component className={className} {...rest}>
+        <Component className={className} {...rest} >
+            
             <img src={image} alt={alt} className={`w-full h-full ${objectCover}`} />
+          
+           
         </Component>
     )
 }

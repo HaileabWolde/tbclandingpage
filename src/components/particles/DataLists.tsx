@@ -1,6 +1,6 @@
 export const NavLinks = [
     {
-        name: "Home",
+        name: "HOME",
         url: "/"
     },
     {
@@ -8,11 +8,11 @@ export const NavLinks = [
         url: "/"
     },
     {
-        name: "About",
+        name: "ABOUT",
         url: "/"
     },
     {
-        name: "Contact",
+        name: "CONTACT",
         url: "/"
     }
 
@@ -43,20 +43,20 @@ export const ServiceTexts = {
     secondText: "We Offer Best Services",
     cards: [
         {
-            firstText: "Calculated Weather",
-            secondText: "Built Wicket longer admire do barton vantity itself do in it."
+            firstText: "Software Development ",
+            secondText: "We offer end-to-end process of conceptualizing, designing, building, testing, and maintaining custom software applications and solutions tailored to specific business or individual needs."
         },
         {
-            firstText: "Best Flight",
-            secondText: "engrossed listening. Park gate sell they west hard for the."
+            firstText: "Technology Consultancy",
+            secondText: "At TBC, we specialize in providing technical consultancy services to a diverse clientele, encompassing both local and international organizations. Our expertise is concentrated in three core areas: data collection and analysis, process automation, and standard operating procedure (SOP) designs. "
         },
         {
-            firstText: "Local Events",
-            secondText: "barton vantity itself do in it.Preferred to men it engrossed listening."
+            firstText: "Mobile Application Development",
+            secondText: "TBC delivers future-focused custom mobile app development solutions. Backed by mobile app developers, our mobile app company strives to cater to businesses’ simple and complex challenges through innovative mobile applications."
         },
         {
-            firstText: "Customizition",
-            secondText: "We deliver outsourced aviation services for military customers."
+            firstText: "ERP system",
+            secondText: "Enhance Business Operations with Comprehensive Enterprise resource planning (ERP) Software in Ethiopia Streamlining Data. Integrated and implementing ERP software is the key to unlocking your team’s full potential. "
         }
     ]
 }
@@ -100,17 +100,23 @@ export const TopDestinationTexts = {
 
 export const BookingStepsTexts = {
     firstText: "Easy and Fast",
-    secondText: "Book your next trip in 3 easy steps",
+    secondText: "Our Mission And Vision for The Future",
     listOfSteps: [
         {
-            text: "Choose Destination lorem ipsum dolor sit amet, consectetur adipiscing elit.Urna, tortor tempus."
+            text: 
+                <span>
+                  <span className="font-bold">Our Mission</span> is to empower today's businesses to thrive in the digital world by providing innovative software solutions and services tailored to your unique needs.
+                </span>
+              
         },
         {
-            text: "Make Payment lorem ipsum dolor sit amet, consectetur adipiscing elit.Uma, totor tempus."
+            text: 
+            <span>
+                <span className="font-bold">Our Vision</span>  is to be at the forefront of technological innovation, shaping the future with software solutions that simplify complexity, enhance lives, and transform industries. We aspire to empower businesses and individuals by harnessing the power of cutting-edge technology, making it accessible, adaptable, and sustainable. 
+
+            </span>
         },
-        {
-            text: "Reach Airport on Selected Date lorem ipsum dolor sit amet.consectetur adipiscing elit.Uma totor tempus."
-        }
+       
     ],
     cardOne:
     {

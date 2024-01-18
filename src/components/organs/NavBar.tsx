@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Image } from "../atoms/Image";
 import { Button } from "../atoms/Button"
-import Logo from "../../assets/tbc_logo/TBC-Logo.png"
+import Logo from "../../assets/tbc_logo/TBCONE.png"
 import { NavButtons, NavLinks } from "../particles/DataLists"
 import { List } from "../atoms/List";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -34,20 +34,23 @@ const NavBar = () => {
 
 
     return (
-        <header className="w-full h-20 bg-transparent overflow-x-hidden fixed z-50 top-0 left-0">
+        <header className="w-full h-24 bg-transparent overflow-x-hidden fixed z-50 top-0 left-0 ">
             <Slide direction="down">
-                <nav className={`w-full md:h-24 h-20 bg-color1 lg:px-24 md:px-12 px-8 flex justify-between items-center`}>
+                <nav className={`w-full md:h-24 h-20  bg-[#f2f7fb] bg-opacity-80 backdrop-blur lg:px-24 md:px-12 px-8 flex justify-between items-center border border-solid border-white border-opacity-18`}>
                     <Image as="a" href="/" className="md:h-24 h-20" image={Logo} alt="Logo" />
                     <div className="lg:flex hidden items-center gap-20">
                         <ul className="flex items-center justify-center gap-6">
                             {
                                 NavLinks.map((navlink, index) => (
-                                    <List className="w-full text-base text-lg" key={index}>
-                                        <NavLink to={navlink.url} className="relative inline-block overflow-hidden pt-2 pl-2 before:w-2 before:h-2 before:bg-color5 before:absolute before:top-2 before:-left-10 before:rounded-full before:transition-all before:duration-200 before:ease-in hover:before:left-0.5 after:w-0.5 after:h-3 after:bg-color5 after:absolute after:left-1 after:-top-10 hover:after:top-3.5 after:transition-all after:duration-200 after:ease-in">{navlink.name}</NavLink>
+                                    <List className="w-full  text-lg" key={index}>
+                                        <a href={`#${navlink.name}`}   className=" bg-gradient-to-r from-black to-red-500 text-transparent bg-clip-text relative inline-block  font-serif overflow-hidden  pt-2 pl-2 before:w-2 before:h-2 before:bg-[#FF9900] before:absolute before:top-2 before:-left-10 before:rounded-full before:transition-all before:duration-200 before:ease-in hover:before:left-0.5 after:w-0.5 after:h-3 after:bg-[#FF9900] after:absolute after:left-1 after:-top-10 hover:after:top-3.5 after:transition-all after:duration-200 after:ease-in">{navlink.name}</a>
                                     </List>
                                 ))
                             }
                         </ul>
+                    </div>
+                    <div>
+                        
                     </div>
                 </nav>
             </Slide>
