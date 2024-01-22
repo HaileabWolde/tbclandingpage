@@ -1,46 +1,123 @@
-import { Image } from "../atoms/Image";
-import bgImage from "../../assets/HeroVector.png";
-import heroImage from "../../assets/tbc_logo/TBCTEST.png";
-import bgWhite from "../../assets/bgWhite.png";
+import { useCallback, useRef } from "react";
+import Slider from "react-slick";
+import {motion} from "framer-motion"
+import {CaretLeft, CaretRight } from "@phosphor-icons/react";
+import TESTSIX from "../../assets/TESTSIX.jpg";
+import TESTSEVEN from "../../assets/TESTSEVEN.jpg"
+import TESTEIGHT from '../../assets/TESTEIGHT.jpg'
+import TESTNINE from "../../assets/TESTNINE.jpg"
+import TESTTEN from "../../assets/TESTTEN.jpg"
 import { Text } from "../atoms/Text";
-import { HeroTexts } from "../particles/DataLists";
+import { Card } from "../molecules/Card";
 import { Button } from "../atoms/Button";
-import { Play, Chat } from "@phosphor-icons/react";
-import { Fade, Slide } from "react-awesome-reveal";
+import {Chat } from "@phosphor-icons/react";
+import { DataOne } from "../particles/TBC Soltuion";
 
 const HeroSection = () => {
+  const sliderRef = useRef<Slider | null>();
+
+  const next = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  const previous = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true, // Allow swiping on mobile devices
+    adaptiveHeight: true, // Adjust the height of the carousel to the current slide
+};
+
+  const renderProfileImg = useCallback((element: number) => {
+    switch (element) {
+      case 0:
+        return TESTSIX;
+      case 1:
+        return TESTSEVEN;
+      case 2:
+        return TESTEIGHT;
+      case 3:
+        return TESTNINE;
+      case 4:
+        return TESTTEN;
+      default:
+        return "";
+    }
+  }, []);
+
   return (
-    <section id="HOME" className="w-full lg:h-[100vh] overflow-hidden md:h-[550px] h-[700px] relative overflow-x-hidden flex justify-end  bg-cover bg-center"  style={{ backgroundImage: `url(${bgWhite})` }}>
-      <Image
-        className="h-[50%] w-[80%] lg:h-[75vh] md:h-[50vh] lg:w-1/2 md:w-[55%]"
-        image={bgImage}
-        alt="Hero Background Vector"
-      />
-      <main className="w-full lg:h-[750px] grid md:grid-cols-2 absolute top-0 left-0 lg:px-24 md:px-8 px-5 pt-24 md:pt-32 lg:pt-0">
-        <div className="flex flex-col justify-center gap-6 md:order-2">
-          <Text
-            as="p"
-            className="text-color1 uppercase tracking-widest lg:text-base  text-sm font-normal font-bold"
-          >
-            {HeroTexts.firstText}
-          </Text>
-          <Text
+    <div id="HOME" className="w-full overflow-hidden mt-[90px] flex flex-row">
+      <Slider ref={(slider) => (sliderRef.current = slider)} {...settings} className="flex w-full justify-center">
+        {DataOne.cards.map((card, index) => (
+          <div className="w-full flex overflow-hidden" key={index}>
+            <Card
+              cardClass="w-full relative overflow-hidden "
+              imageAlt={card.firstText}
+              imageSrc={renderProfileImg(index)}
+              imageWrapperClass="w-full overflow-hidden h-[550px]"
+              cover="object-fit opacity-80"
+              textWrapperClass=" h-full"
+            >
+              <div className=" absolute top-0 left-0 right-0  flex justify-between items-center h-full ">
+              <Text >
+              <Button onClick={previous} id="prev" className="cursor-pointer outline-none border-none text-white p-2 rounded-full bg-gray-800 hover:bg-gray-900"  type="button">
+                            <CaretLeft size={24} color="currentColor" weight="fill" />
+                        </Button>
+              </Text>
+              <Text >
+              <Button onClick={next} id="next"  className="cursor-pointer outline-none border-none text-white p-2 rounded-full bg-gray-800 hover:bg-gray-900" type="button">
+                            <CaretRight size={24} color="currentColor" weight="fill" />
+                        </Button>
+              </Text>
+              </div>
+              <div className="absolute bottom-[60px] right-[200px] flex ">
+                {
+                  ['TBC TECHNOLOGY SOLUTIONS', 'Adverstiment Technology', 'Software Outsorcing Project', 'It Consultancy', 'Software Development'].map((item, index)=> (
+                    <Button
+                    key={item + index}
+                    className="w-3 h-3 rounded-[50%] bg-[white] m-1 cursor-pointer hover:bg-[#4169E1] transition-colors duration-200 ease-in-out p-3"
+                    style={card.firstText === item ? {backgroundColor: '#4169E1'} : {}}
+                    onClick={next}
+                    >
+                      
+                    </Button>
+                  ))
+                }
+              </div>
+             
+              <motion.div
+              whileInView={{x:[-100, 0], opacity: [0, 1]}}
+              transition={{duration: 0.6,  delayChildren: 10}} 
+              className="absolute top-[100px] z-10 left-[60px] flex flex-col items-center gap-8 bg-white bg-opacity-80 w-[45%] backdrop-filter backdrop-blur-sm px-2 py-2 h-[80%]">
+              <motion.div
+               whileInView={{opacity:[0, 1]}}
+               transition={{duration: 1, ease: 'easeInOut'}}
+              >
+              <Text
             as="h1"
-            className=" text-color3 lg:text-7xl md:text-5xl text-3xl font-medium bg-gradient-to-r from-purple-500 to-red-500 bg-clip-text text-transparent"
-          >
-            <Fade>{HeroTexts.secondText}</Fade>
+            className=" lg:text-7xl md:text-5xl text-3xl font-bold text-gradient bg-gradient-to-r  from-black to-blue-500 bg-clip-text text-transparent  font-serif w-full text-center antialiased"
+           >
+            {card.firstText}
           </Text>
+          
+              </motion.div>
+              
           <Text
-            as="p"
-            className="text-color3 md:text-base text-sm text-justify font-semibold font-serif"
-          >
-            <Fade>{HeroTexts.thirdText}</Fade>
-          </Text>
-          <div className="w-full flex md:justify-start justify-between items-center lg:gap-12 md:gap-6 gap-0">
-            {/* <Button type="button" className="outline-none border-none lg:px-7 px-5 py-3 bg-color3 text-color5 font-extralight rounded-lg">
-                            CONTACT US
-                        </Button> */}
-            <div className="flex items-center lg:gap-6 gap-3 cursor-pointer">
+           
+           className="text-black md:text-lg text-sm  font-bold font-serif px-4 antialiased text-center"
+         >
+           {card.secondText}
+         </Text>
+         <div className="flex items-center lg:gap-6 gap-3 cursor-pointer">
               <Text as="span" className="relative flex h-14 w-14">
                 <Text
                   as="span"
@@ -53,23 +130,18 @@ const HeroSection = () => {
                   <Chat size={20} color="currentColor" weight="fill" />
                 </Text>
               </Text>
-              <Button type="button" className="outline-none border-none">
+              <Button type="button" className="outline-none border-none font-serif">
                 CONTACT US
               </Button>
             </div>
+              </motion.div>
+             
+            </Card>
+             
           </div>
-        </div>
-        <div className="flex flex-col items-center justify-center md:order-1 bg-gray-50 bg-opacity-50  " >
-          <Slide direction="left">
-            <Image
-              image={heroImage}
-              alt="Hero Image"
-              className=" lg:h-[90%] lg:w-[90%] md:h-[100%] md:w-full w-[90%] h-[50vh]"
-            />
-          </Slide>
-        </div>
-      </main>
-    </section>
+        ))}
+      </Slider>
+    </div>
   );
 };
 

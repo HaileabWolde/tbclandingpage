@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react"
 import { Image } from "../atoms/Image";
-import { Button } from "../atoms/Button"
 import Logo from "../../assets/tbc_logo/TBCONE.png"
-import { NavButtons, NavLinks } from "../particles/DataLists"
+import {NavLinks } from "../particles/NavLinks"
 import { List } from "../atoms/List";
-import { NavLink, useNavigate } from "react-router-dom";
-import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
+import {useNavigate } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
-
-
+import {HiMenuAlt4, HiX} from 'react-icons/hi'
+import {motion} from 'framer-motion'
 
 const NavBar = () => {
     const navigate = useNavigate()
+    const [toggle, setToggle] = useState(false)
 
     const [open, setOpen] = useState(false)
     // const [scrollY, setScrollY] = useState(0)
@@ -49,9 +48,9 @@ const NavBar = () => {
                             }
                         </ul>
                     </div>
-                    <div>
-                        
-                    </div>
+                   <div>
+                    
+                   </div>
                 </nav>
             </Slide>
 

@@ -12,7 +12,6 @@ const Home = () => {
         <>
             <HeroSection />
             <Services />
-            <TopDestination />
             <BookingSteps />
             <hr />
             <Testimonials />

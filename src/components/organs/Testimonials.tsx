@@ -1,6 +1,6 @@
 import { useCallback, useRef } from "react";
 import { Text } from "../atoms/Text"
-import { TestimonialTexts } from "../particles/DataLists"
+import { TestimonialTexts } from "../particles/Testimonies"
 import Slider from "react-slick";
 import { Button } from "../atoms/Button";
 import { CaretDown, CaretUp } from "@phosphor-icons/react";
@@ -53,7 +53,7 @@ const Testimonials = () => {
     }, [])
 
     return (
-        <section className="w-full  h-auto flex  flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 mt-6 gap-5">
+        <section id="TESTIMONIES" className="w-full  h-auto flex  flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 mt-6 gap-5">
             <main className='w-full grid md:grid-cols-1 lg:gap-0 gap-8 md:gap-5 '>
                 {/* Text and Steps Container  */}
                 <div className='w-full flex flex-col gap-6 '>
@@ -70,7 +70,7 @@ const Testimonials = () => {
                         <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
                             {
                                 TestimonialTexts.feedBacks.map((feedBack, index) => (
-                                    <div className="w-full  ">
+                                    <div className="w-full">
                                         <Card key={index} cardClass="bg-white shadow border-[1px] border-color3/10 relative rounded-xl p-4 lg:h-[200px] h-[260px] lg:mb-4 w-[70%] flex flex-col gap-4 justify-center items-center mx-auto" imageAlt={feedBack.person} imageSrc={renderProfileImg(index)} imageWrapperClass="  flex flex-col justify-center items-center rounded-[50%] overflow-hidden " cover="object-cover object-top" textWrapperClass="flex flex-col justify-center gap-6">
                                             <Text as="q" className="text-[0.84rem] font-light text-color3">
                                                 {feedBack.text}
