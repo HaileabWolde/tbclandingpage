@@ -11,7 +11,7 @@ import {
 import "./Fotter.css"
 const Footer = () => {
   return (
-    <footer id="CONTACT" className=" allfriends w-full flex flex-col bg-gradient-to-t from-teal-200  to-teal-400 relative">
+    <footer id="CONTACT" className=" allfriends w-full flex flex-col bg-gradient-to-t from-[#89CFF3] to-[#00A9FF] relative">
       <section className="w-full h-[150px] grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6 py-32 gap-7 md:gap-4 lg:gap-0">
         {/* TBC Logo */}
         <div class="custom-shape-divider-top-1705906384">
@@ -136,7 +136,7 @@ const Footer = () => {
       </section>
 
       {/* Copyright */}
-      <hr />
+     
       <Text className="text-center  text-black font-bold text-xs py-6 ">
         Copyright 2023. TBC Technologies. All rights reserved.
       </Text>

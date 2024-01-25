@@ -51,9 +51,9 @@ const Partners = () => {
       <div className="w-full flex gap-6 justify-center lg:items-center pt-6 mb-6">
         <Text
           as="h1"
-          className="lg:text-5xl md:text-3xl text-4xl text-color5 font-medium"
+          className="lg:text-5xl md:text-3xl text-4xl bg-gradient-to-r from-red-500 to-purple-500 text-transparent bg-clip-text font-semibold font-serif"
         >
-          Clients
+          Our Best Clients
         </Text>
       </div>
       <Slider
