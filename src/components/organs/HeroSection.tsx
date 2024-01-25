@@ -63,7 +63,7 @@ const HeroSection = () => {
               cardClass="w-full relative overflow-hidden "
               imageAlt={card.firstText}
               imageSrc={renderProfileImg(index)}
-              imageWrapperClass="w-full overflow-hidden h-[550px]"
+              imageWrapperClass="w-full overflow-hidden h-[700px]"
               cover="object-fit opacity-80"
               textWrapperClass=" h-full"
             >
@@ -97,14 +97,14 @@ const HeroSection = () => {
               <motion.div
               whileInView={{x:[-100, 0], opacity: [0, 1]}}
               transition={{duration: 0.6,  delayChildren: 10}} 
-              className="absolute top-[100px] z-10 left-[60px] flex flex-col items-center gap-8 bg-white bg-opacity-80 w-[45%] backdrop-filter backdrop-blur-sm px-2 py-2 h-[80%]">
+              className="absolute top-[100px]  left-[60px] flex flex-col items-center justify-center gap-8 bg-white bg-opacity-80 w-[45%]  px-2  h-[70%]">
               <motion.div
                whileInView={{opacity:[0, 1]}}
                transition={{duration: 1, ease: 'easeInOut'}}
               >
               <Text
             as="h1"
-            className=" lg:text-7xl md:text-5xl text-3xl font-bold text-gradient bg-gradient-to-r  from-black to-blue-500 bg-clip-text text-transparent  font-serif w-full text-center antialiased"
+            className=" lg:text-7xl md:text-5xl text-3xl font-bold text-gradient bg-gradient-to-r  from-black  to-blue-500 bg-clip-text text-transparent  font-serif w-full text-center antialiased"
            >
             {card.firstText}
           </Text>

@@ -1,6 +1,6 @@
 export const TestimonialTexts = {
     firstText: "TESTIMONIALS",
-    secondText: "What people say about Us.",
+    secondText: "What People Say About Us",
     feedBacks: [
         {
             text: "You did a fabulous job. There were no hitches. Thank you again for all your work planning this trip.",

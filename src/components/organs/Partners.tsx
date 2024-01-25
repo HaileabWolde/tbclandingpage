@@ -47,7 +47,7 @@ const Partners = () => {
   };
 
   return (
-    <section id= "BRANDS" className="w-full lg:px-9 px-1 my-16 lg:my-3  bg-gradient-to-r from-gray-300 to-gray-400">
+    <section id= "BRANDS" className="w-full lg:px-9 px-1 my-16 lg:my-3 bg-gradient-to-r from-[#37306B] to-[#19376D]">
       <div className="w-full flex gap-6 justify-center lg:items-center pt-6 mb-6">
         <Text
           as="h1"
@@ -62,63 +62,63 @@ const Partners = () => {
       >
         <Card
           clientName="ENgida"
-          cardClass="p-12 bg-gray-100 rounded-lg cursor-pointer flex item-center justify-center "
+          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center "
           imageAlt="partenrsLogo"
           imageSrc={partners1}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners2}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100 rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners3}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners1}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners2}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners3}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners1}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners2}
           imageWrapperClass="w-[120px] h-[50px]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-gray-100  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center"
           imageAlt="partenrsLogo"
           imageSrc={partners3}
           imageWrapperClass="w-[120px] h-[50px]"

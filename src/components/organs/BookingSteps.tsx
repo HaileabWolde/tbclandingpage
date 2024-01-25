@@ -22,7 +22,7 @@ const BookingSteps = () => {
     }, [])
 
     return (
-        <section id="ABOUT" className="w-full h-[100vh] flex flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 my-28 gap-5">
+        <section id="ABOUT" className="w-full h-[100vh] flex flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 my-12 gap-5">
                 <motion.div
                 whileInView={{opacity: [0, 1]}}
                 transition={{duration: 0.6,  ease: 'easeInOut'}}
@@ -30,7 +30,7 @@ const BookingSteps = () => {
                     <main className='w-full grid md:grid-cols-2 lg:gap-6 gap-12 md:gap-5'>
                 {/* Text and Steps Container  */}
                 <div className='w-full flex flex-col gap-6 order-2 md:order-1'>
-                    <Text as="h1" className="lg:text-5xl md:text-3xl text-4xl bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text  font-medium font-serif">
+                    <Text as="h1" className="lg:text-5xl md:text-3xl text-4xl bg-gradient-to-r  from-black  to-blue-500 bg-clip-text text-transparent  font-medium font-serif">
                         {BookingStepsTexts.secondText}
                     </Text>
                     <ul className='flex flex-col gap-8 lg:mt-5 mt-3'>

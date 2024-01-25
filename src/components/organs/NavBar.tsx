@@ -3,13 +3,10 @@ import { Image } from "../atoms/Image";
 import Logo from "../../assets/tbc_logo/TBCONE.png"
 import {NavLinks } from "../particles/NavLinks"
 import { List } from "../atoms/List";
-import {useNavigate } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
-import {HiMenuAlt4, HiX} from 'react-icons/hi'
-import {motion} from 'framer-motion'
 
 const NavBar = () => {
-    const navigate = useNavigate()
+    
     const [toggle, setToggle] = useState(false)
 
     const [open, setOpen] = useState(false)
@@ -35,7 +32,7 @@ const NavBar = () => {
     return (
         <header className="w-full h-24 bg-transparent overflow-x-hidden fixed z-50 top-0 left-0 ">
             <Slide direction="down">
-                <nav className={`w-full md:h-24 h-20  bg-[#f2f7fb] bg-opacity-80 backdrop-blur lg:px-24 md:px-12 px-8 flex justify-between items-center border border-solid border-white border-opacity-18`}>
+                <nav className={`w-full md:h-24 h-20  bg-[#f2f7fb] bg-opacity-80  lg:px-24 md:px-12 px-8 flex justify-between items-center border border-solid border-white border-opacity-18`}>
                     <Image as="a" href="/" className="md:h-24 h-20" image={Logo} alt="Logo" />
                     <div className="lg:flex hidden items-center gap-20">
                         <ul className="flex items-center justify-center gap-6">

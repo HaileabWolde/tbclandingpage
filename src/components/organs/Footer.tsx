@@ -11,8 +11,8 @@ import {
 import "./Fotter.css"
 const Footer = () => {
   return (
-    <footer id="CONTACT" className="w-full flex flex-col bg-gradient-to-t from-teal-200  to-teal-400 relative pt-[80px]">
-      <section className="w-full h-auto grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6 py-16 gap-7 md:gap-4 lg:gap-0">
+    <footer id="CONTACT" className=" allfriends w-full flex flex-col bg-gradient-to-t from-teal-200  to-teal-400 relative">
+      <section className="w-full h-[150px] grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6 py-32 gap-7 md:gap-4 lg:gap-0">
         {/* TBC Logo */}
         <div class="custom-shape-divider-top-1705906384">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -23,12 +23,7 @@ const Footer = () => {
 </div>
         <div className="flex flex-col items-start gap-4">
           <Image className="w-38 text-white" image={logo} alt="Logo" as="a" href="/" />
-          <div className="flex flex-col md:items-center  md:mt-1. ml-2">
-            <Text className="text-sm  font-semibold text-color4" as="p">
-              We build tomorrow's technology today, empowering businesses to
-              navigate the digital landscape with confidence.
-            </Text>
-          </div>
+         
         </div>
 
         {/* Quick Links */}
