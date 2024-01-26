@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import {Card} from "../../molecules/Card";
 import { Text } from "../../atoms/Text";
-import MobileApp from "../../../assets/MobileApp.jpg"
+import MobileApp from "../../../assets/MobileApp.jpeg"
 import { Button } from "../../atoms/Button";
 
 const HeroSection = ()=> {

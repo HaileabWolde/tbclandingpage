@@ -2,11 +2,11 @@ import { useCallback, useRef } from "react";
 import Slider from "react-slick";
 import {motion} from "framer-motion"
 import {CaretLeft, CaretRight } from "@phosphor-icons/react";
-import TESTSIX from "../../assets/TESTSIX.jpg";
-import TESTSEVEN from "../../assets/TESTSEVEN.jpg"
-import TESTEIGHT from '../../assets/TESTEIGHT.jpg'
+import TESTSIX from "../../assets/TESTSIX.jpeg";
+import TESTSEVEN from "../../assets/TESTSEVEN.jpeg"
+import TESTEIGHT from '../../assets/Software Development Test.jpg'
 import TESTNINE from "../../assets/TESTNINE.jpg"
-import TESTTEN from "../../assets/TESTTEN.jpg"
+import TESTTEN from "../../assets/Software Development_result.png"
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
 import { Button } from "../atoms/Button";
