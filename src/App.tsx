@@ -27,7 +27,7 @@ function App() {
   }, [directory.pathname]);
 
   return (
-    <div className="w-full bg-white bg-opacity-90  text-gray-950 font-poppins">
+    <div className="w-full bg-white bg-opacity-90  text-gray-950 font-poppins relative">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -22,7 +22,8 @@ const BookingSteps = () => {
     }, [])
 
     return (
-        <section id="ABOUT" className="w-full h-[100vh] flex flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 my-12 gap-5">
+        <section id="ABOUT" 
+        className="w-full  flex flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 py-12">
                 <motion.div
                 whileInView={{opacity: [0, 1]}}
                 transition={{duration: 0.6,  ease: 'easeInOut'}}
@@ -50,7 +51,7 @@ const BookingSteps = () => {
                     </ul>
                 </div>
                 {/* Card Container  */}
-                <div className='w-full flex flex-col justify-center lg:items-center items-start relative order-1 md:order-2'>
+                <div className=' md:w-full md:flex flex-col justify-center lg:items-center items-start relative hidden  md:order-2'>
                     {/* First Card  */}
                     <Card cardClass='lg:w-[70%] md:w-[80%] w-[90%] shadow-2xl shadow-sky-500/70 p-4 rounded-xl flex flex-col gap-4' imageAlt={BookingStepsTexts.cardOne.name} imageSrc={CardImage1} imageWrapperClass='h-[450px] overflow-hidden rounded-xl shadow' cover='object-cover object-top ' textWrapperClass='flex flex-col gap-3'>
                        

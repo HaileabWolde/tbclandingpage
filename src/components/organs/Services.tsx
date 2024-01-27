@@ -34,7 +34,7 @@ const Services = () => {
         }
     }, []);
     const [expandedCards, setExpandedCards] = useState(() =>
-    Array(ServiceTexts.cards.length).fill(false)
+    [ServiceTexts.cards.length].fill(false)
   );
 
   const handleRead = (event, index) => {
@@ -61,13 +61,13 @@ const Services = () => {
     return truncatedText;
   };
     return (
-        <section id="SOLUTIONS" className="w-full mt-[20px]  flex flex-col items-center justify-center relative lg:px-24 md:px-20 px-6 ">
+        <section id="SOLUTIONS" className="w-full mt-0 md:mt-[20px]  flex flex-col items-center justify-center relative lg:px-24 md:px-20 px-6 ">
             <motion.div
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}
             >
                 
-            <main className="w-[100vw] pt-24 flex flex-col gap-3 items-center bg-gradient-to-b from-gray-100 to-gray-100 mt-8">
+            <main className="w-[100vw] pt-24 flex flex-col gap-3 items-center bg-gradient-to-b from-gray-100 to-gray-100 mt-8 ">
                 <Text as="p" className="font-semibold bg-gradient-to-r  from-black  to-blue-500 bg-clip-text text-transparent  font-serif ">
                     {ServiceTexts.firstText}
                 </Text>
@@ -79,7 +79,7 @@ const Services = () => {
                     {
                         ServiceTexts.cards.map((card, index) => (
                             <Link to={`/services/${card.firstText}`} >
-                                    <Card cardClass="w-full bg-white flex flex-col items-center justify-center py-6 cursor-pointer transition duration-300 hover:shadow-xl px-5 rounded-xl cardPseudo after:bg-color1 shadow-md border-solid border-2 border-orange-500" imageWrapperClass="w-28 h-28 relative z-10 before:content-[''] before:absolute before:top-3 before:right-3 before:w-16 before:h-16 before:bg-color2/30 before:-z-10 before:rounded-tl-3xl before:rounded-br-3xl" cover="object-cover" imageAlt={card.firstText} imageSrc={renderServiceIcon(index)} textWrapperClass="w-full flex flex-col items-center gap-2 text-center" key={index} >
+                                    <Card cardClass="w-full bg-white flex flex-col items-center justify-center  cursor-pointer transition duration-300 hover:shadow-xl px-5 rounded-xl cardPseudo after:bg-color1 shadow-md border-solid border-2 border-orange-500" imageWrapperClass="w-28 h-28 relative z-10 before:content-[''] before:absolute before:top-3 before:right-3 before:w-16 before:h-16 before:bg-color2/30 before:-z-10 before:rounded-tl-3xl before:rounded-br-3xl" cover="object-cover" imageAlt={card.firstText} imageSrc={renderServiceIcon(index)} textWrapperClass="w-full flex flex-col items-center gap-2 text-center" key={index} >
                                 <Text as="h4" className="text-base rounded font-medium text-color3">
                                     {card.firstText}
                                 </Text>
