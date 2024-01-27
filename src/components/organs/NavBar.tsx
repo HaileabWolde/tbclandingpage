@@ -5,7 +5,6 @@ import { Image } from "../atoms/Image";
 import Logo from "../../assets/tbc_logo/TBCONE.png"
 import {NavLinks } from "../particles/NavLinks"
 import { List } from "../atoms/List";
-import { Slide } from "react-awesome-reveal";
 import "./Nabar.css"
 const NavBar = () => {
     

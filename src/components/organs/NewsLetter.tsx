@@ -50,7 +50,7 @@ const NewsLetter = () => {
       )
      } 
     return (
-        <section className="w-full mt-12 mb-[200px] flex justify-between relative  h-[400px]  bg-gradient-to-b from-gray-100 to-gray-100">
+        <section className="w-full md:mt-12 mb-[200px] flex justify-between relative  h-[400px]  bg-gradient-to-b from-gray-100 to-gray-100">
           <main className="w-[90%] mx-auto flex justify-between gap-4">
             <div className="w-[50%]">
                 <Text className="w-full  flex flex-col items-center py-8 gap-2">

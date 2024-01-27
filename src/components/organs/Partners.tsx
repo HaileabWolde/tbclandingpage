@@ -47,7 +47,7 @@ const Partners = () => {
   };
 
   return (
-    <section id= "BRANDS" className="w-full lg:px-9 px-1 my-16 lg:my-3 bg-gradient-to-r from-[#37306B] to-[#19376D]">
+    <section id= "BRANDS" className="w-full lg:px-9 px-1 my-10 md:my-16 lg:my-3 bg-gradient-to-r from-[#37306B] to-[#19376D]">
       <div className="w-full flex gap-6 justify-center lg:items-center pt-6 mb-6">
         <Text
           as="h1"
