@@ -30,17 +30,17 @@ const Brands = ()=> {
         }
     }, []);
     return (
-        <section id="SOLUTIONS" className="w-full ">
+        <section id="CLIENTS" className="w-full ">
             <motion.div
             whileInView={{opacity:[0, 1]}}
             transition={{duration: 0.5, ease: 'easeInOut'}}
             >
             <Text
                 as="h2" 
-                className="w-full font-serif font-bold text-3xl flex flex-col items-center mt-[150px] mb-[50px]">
+                className="w-full font-serif font-bold text-3xl flex flex-col items-center mt-[70px] md:mt-[90px] mb-[50px]">
                     Our Previous Works
                 </Text>
-                <div className="w-[80%] flex justify-between flex-wrap mx-auto">
+                <div className="w-[80%] flex flex-col gap-4 md:gap-0  md:flex-row items-center justify-between flex-wrap mx-auto">
                         {
                             DataOne.cards.map((card, index)=> (
                                 <Card

@@ -30,7 +30,7 @@ const Platform = ()=> {
         }
     }, []);
     return (
-        <section className="w-full pb-[50px]">
+        <section id="SOLUTIONS" className="w-full pb-[50px]">
             <motion.div
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}

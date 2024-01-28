@@ -30,7 +30,7 @@ const Brands = ()=> {
         }
     }, []);
     return (
-        <section className="w-full ">
+        <section id="CLIENTS"  className="w-full ">
             <motion.div
             whileInView={{opacity:[0, 1]}}
             transition={{duration: 0.5, ease: 'easeInOut'}}
