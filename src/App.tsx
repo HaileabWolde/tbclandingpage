@@ -6,7 +6,8 @@ import { animateScroll } from "react-scroll";
 import NavBar from "./components/organs/NavBar";
 import Home from "./components/pages/Home";
 import Mobile_Development from "./components/pages/MobileDevelopment";
-import Software from "./components/pages/Software Development"
+import Software from "./components/pages/Software Development";
+import Consulting from "./components/pages/Consulting";
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../reduxToolkit/hooks";
 import { getClients } from "../reduxToolkit/features/tbcClients/clientSlice";
@@ -33,6 +34,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services/Mobile Application Development" element={<Mobile_Development/>}/>
         <Route path="/services/Software Development" element={<Software/>}/>
+        <Route path="/services/Technology Consultancy" element={<Consulting/>}/>
+        
       </Routes>
       <Footer />
     </div>
