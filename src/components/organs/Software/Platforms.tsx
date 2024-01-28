@@ -30,17 +30,17 @@ const Platform = ()=> {
         }
     }, []);
     return (
-        <section className="w-full pb-[100px]">
+        <section className="w-full pb-[50px]">
             <motion.div
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}
             >
             <Text
         as="h2" 
-        className="w-full font-serif font-bold text-3xl flex flex-col items-center mt-[150px] mb-[50px]">
+        className="w-[100vw] font-serif font-bold text-2xl md:text-3xl flex flex-col items-center mt-[50px] mb-[50px] ml-2">
             Technology and Platforms
         </Text>
-        <div className="w-[80%] flex justify-between flex-wrap mx-auto">
+        <div className=" w-full md:w-[80%] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 flex-wrap mx-auto">
                 {
                     DataOne.cards.map((card, index)=> (
                         <Card
