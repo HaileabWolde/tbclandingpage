@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import { Text } from "../atoms/Text"
 import Alert from 'react-bootstrap/Alert';
 import { motion } from 'framer-motion';
-import { ClassNames } from '@emotion/react';
 
 const NewsLetter = () => {
     const [isloading, setLoading] = useState(true)
@@ -50,22 +49,16 @@ const NewsLetter = () => {
       )
      } 
     return (
-        <section className="w-full md:mt-12 mb-[200px] flex justify-between relative  h-[400px]  bg-gradient-to-b from-gray-100 to-gray-100">
-          <main className="w-[90%] mx-auto flex justify-between gap-4">
-            <div className="w-[50%]">
-                <Text className="w-full  flex flex-col items-center py-8 gap-2">
-                    <h1 className="text-3xl font-serif">Give Us A Call</h1>
-                    <h2 className='text-2xl font-sans font-semibold'>In Ethiopia</h2>
-                    <h3 className='text-xl font-sans'>+251979060679 </h3>
-                    <h2 className='text-2xl font-sans font-semibold'>In America</h2>
-                    <h3 className='text-xl font-sans'>Merryland +13016553123 </h3>
-                    <h1 className="text-3xl font-serif">Send Us Email</h1>
-                    <h3 className='text-xl font-sans hover:underline cursor-pointer'>info@TBC.com</h3>
+        <section className="w-full md:mt-12 mb-[80px] md:mb-[200px] flex justify-between relative  md:h-[400px]  bg-gradient-to-b from-gray-100 to-gray-100">
+          <main className="w-[90%] mx-auto flex flex-col md:flex-row justify-between">
+            <div className="w-[100vw] pr-12 md:p-0 md:w-[50%] h-full">
+                <Text className="w-full  h-[80%] flex flex-col items-center justify-center py-6 md:py-8 gap-2">
+                    <h1 className="text-3xl font-bold font-serif bg-gradient-to-r  from-black  to-blue-500 bg-clip-text text-transparent">Unlocking Possibilities: Contact Us Now!</h1>
                 </Text>
 
             </div>
-            <div className="w-[45%] ">
-                <form ref={form}  className="w-full flex justify-between flex-wrap gap-2 py-6 h-full items-center relative" onSubmit={sendEmail}>
+            <div className="w-100% md:w-[45%] ">
+                <form ref={form}  className="w-full flex flex-col md:flex-row justify-between md:flex-wrap gap-5 md:gap-2 md:py-6 h-full items-center relative" onSubmit={sendEmail}>
                 {
                     isAlert &&  
                     <motion.div
@@ -85,41 +78,41 @@ const NewsLetter = () => {
                 type="text"
                 name="user_name"
                 placeholder="Your Name"
-                className="p-4 border rounded-lg text-sm shadow-lg outline-none w-[45%]"
+                className="p-4 border rounded-lg text-sm shadow-lg outline-none w-full md:w-[45%]"
                 required
                 />
                 <input 
                 type="email"
                 placeholder="Email"
                 name="user_email"
-                className="p-4  border rounded-lg text-sm shadow-lg outline-none w-[45%]"
+                className="p-4  border rounded-lg text-sm shadow-lg outline-none w-full md:w-[45%]"
                 required
                 />
                 <input
                 type="text"
                 placeholder="Your Company(optional)"
                 name="user_company"
-                className="p-4  border rounded-lg text-sm shadow-lg outline-none w-[45%]"
+                className="p-4  border rounded-lg text-sm shadow-lg outline-none w-full md:w-[45%]"
                 required/>
                 <input
                 type="text"
                 placeholder="Your Subject"
                 name="message"
-                className="p-4  border rounded-lg text-sm shadow-lg outline-none w-[45%]"
+                className="p-4  border rounded-lg text-sm shadow-lg outline-none w-full md:w-[45%]"
                 required/>
                  
                 <textarea
                 type="text"
                 placeholder="please add Your Message here"
                 name="user_subject"
-                className="p-4  border rounded-lg  w-[100%] h-[40%] shadow-lg outline-none"
+                className="p-10 md:p-4  border rounded-lg  w-full h-[40%] shadow-lg outline-none"
                 required
                 />
                 <Text className='w-full flex flex-col items-center'>
                 <button
                 type="submit" 
                 value="Send"
-                className="bg-[#FF9900] pt-2 pb-2 pl-12 pr-12 rounded-lg">{isloading ? 'Send' : 'Sending ...'}</button>
+                className="bg-[#FF9900] w-full md:w-auto pt-2 pb-2 pl-12 pr-12 rounded-lg">{isloading ? 'Send' : 'Sending ...'}</button>
                 </Text>
                
                 </form>

@@ -11,8 +11,8 @@ import {
 import "./Fotter.css"
 const Footer = () => {
   return (
-    <footer id="CONTACT" className=" allfriends w-full flex flex-col bg-gradient-to-t from-[#89CFF3] to-[#00A9FF] relative">
-      <section className="w-full h-[150px] grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6 py-32 gap-7 md:gap-4 lg:gap-0">
+    <footer id="CONTACT" className=" allfriends w-full  flex flex-col bg-gradient-to-t from-[#89CFF3] to-[#00A9FF] relative">
+      <section className="w-full  overflow-hidden h-[230px] grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6  gap-7 md:gap-4 lg:gap-0">
         {/* TBC Logo */}
         <div class="custom-shape-divider-top-1705906384">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -21,13 +21,14 @@ const Footer = () => {
         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
     </svg>
 </div>
-        <div className="flex flex-col items-start gap-4">
-          <Image className="w-38 text-white" image={logo} alt="Logo" as="a" href="/" />
-         
+        <div className="flex  items-center my-[110px] px-4 w-[100vw] gap-2 mr-4">
+          <Image className="w-[150px] h-[150px] text-white" image={logo} alt="Logo" as="a" href="/" />
+          
         </div>
 
         {/* Quick Links */}
-        <div className="flex flex-col md:items-center gap-4 md:mt-8">
+        
+        <div className="flex flex-col md:items-center gap-4 md:mt-8 py-[75px]">
           <Text className="text-xl text-black font-bold font-serif" as="h2">
             Quick Links
           </Text>
@@ -52,7 +53,7 @@ const Footer = () => {
         </div>
 
         {/* Contacts */}
-        <div className="flex flex-col md:items-center gap-4 md:mt-8">
+        <div className="flex flex-col md:items-center gap-4 md:mt-8 py-[75px]">
           <Text className="text-xl text-black font-bold font-serif" as="h2">
             Contacts
           </Text>
@@ -77,7 +78,7 @@ const Footer = () => {
         </div>
 
         {/* More */}
-        <div className="flex flex-col lg:items-center gap-4 md:mt-8">
+        <div className="flex flex-col lg:items-center gap-4 md:mt-8 py-[75px]">
           <Text className="text-xl text-black font-bold font-serif" as="h2">
             More
           </Text>
@@ -102,7 +103,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media Links*/}
-        <div className="flex flex-col lg:items-center w-full md:mt-8 gap-8">
+        <div className="flex flex-col lg:items-center w-full md:mt-8 gap-8 py-20">
           <Text className="text-xl text-black font-bold font-serif" as="h2">
             Follow Us:
           </Text>
@@ -136,7 +137,14 @@ const Footer = () => {
       </section>
 
       {/* Copyright */}
-     
+      <Text className="text-center  text-xs flex justify-center gap-2">
+            <p className="font-bold">Ethiopia</p>
+            <p className="text-center">+251992621400</p>
+            <p className="font-bold ">America</p>
+            <p className="">+13016553123</p>
+            <p className="font-bold">Email</p>
+            <p>info@TBC.com</p>
+      </Text>
       <Text className="text-center  text-black font-bold text-xs py-6 ">
         Copyright 2023. TBC Technologies. All rights reserved.
       </Text>
