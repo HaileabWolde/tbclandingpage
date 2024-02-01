@@ -3,6 +3,7 @@ import Brands from "../organs/Software/Brands"
 import Services from "../organs/Software/Services"
 import Platform from "../organs/Software/Platforms"
 import FAQ from "../organs/Software/FAQ"
+import Testimonials from "../organs/Software/Testimonals"
 const Software = ()=> {
     return (
        <>
@@ -10,6 +11,7 @@ const Software = ()=> {
        <Brands/>
        <Services/>
        <Platform/>
+       <Testimonials/>
        <FAQ/>
        </>
     )

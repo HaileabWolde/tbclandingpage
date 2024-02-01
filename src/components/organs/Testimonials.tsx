@@ -71,7 +71,7 @@ const Testimonials = () => {
                             {
                                 TestimonialTexts.feedBacks.map((feedBack, index) => (
                                     <div className="w-full">
-                                        <Card key={index} cardClass=" shadow border-[1px] border-color3/10 relative rounded-xl pl-4 pr-4  pb-6 lg:h-[200px] h-[260px] lg:mb-4 w-full flex flex-col gap-8 md:gap-4 justify-center items-center mx-auto" imageAlt={feedBack.person} imageSrc={renderProfileImg(index)} imageWrapperClass="  flex flex-col justify-center items-center rounded-[50%] overflow-hidden" cover="object-cover object-top" textWrapperClass="flex flex-col justify-center gap-6 mt-2 md:mt-0">
+                                        <Card key={index} cardClass=" shadow border-[1px] border-color3/10 relative rounded-xl pl-4 pr-4  pb-6 lg:h-[200px] h-[260px] lg:mb-4 w-full flex flex-col gap-8 md:gap-4 justify-center items-center mx-auto" imageAlt={feedBack.person} imageSrc={renderProfileImg(index)} imageWrapperClass=" rounded-[50%] overflow-hidden" cover="object-cover object-top" textWrapperClass="flex flex-col justify-center gap-6 mt-2 md:mt-0">
                                             <Text as="q" className=" mt-10 md:mt-0 text-[0.84rem] font-light text-color3">
                                                 {feedBack.text}
                                             </Text>

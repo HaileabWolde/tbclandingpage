@@ -55,7 +55,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div id="HOME" className="w-full overflow-hidden mt-[90px] flex flex-row">
+    <div id="HOME" className="w-full mt-[90px]">
       <Slider ref={(slider) => (sliderRef.current = slider)} {...settings} className="flex w-full justify-center">
         {DataOne.cards.map((card, index) => (
           <div className="w-full flex overflow-hidden" key={index}>
