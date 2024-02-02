@@ -61,14 +61,14 @@ const Services = () => {
     return truncatedText;
   };
     return (
-        <section id="SOLUTIONS" className="w-full mt-0 md:mt-[20px]  flex flex-col items-center justify-center relative lg:px-24 md:px-20 px-6 ">
+        <section id="SOLUTIONS" className="w-full flex flex-col items-center justify-center relative lg:px-24 md:px-20 px-6 ">
             <motion.div
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}
             >
                 
-            <main className="w-[100vw] pt-24 flex flex-col gap-3 items-center bg-gradient-to-b from-gray-100 to-gray-100 mt-8 ">
-                <Text as="p" className="font-semibold bg-gradient-to-r  from-black  to-blue-500 bg-clip-text text-transparent  font-serif ">
+            <main className="w-[100vw] pt-24 flex flex-col gap-3 items-center bg-gradient-to-b from-gray-100 to-gray-100">
+                <Text as="p" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent  font-serif ">
                     {ServiceTexts.firstText}
                 </Text>
                 <Text as="h2" className="md:text-4xl text-2xl font-medium capitalize bg-gradient-to-r from-red-500 to-purple-500 text-transparent bg-clip-text">

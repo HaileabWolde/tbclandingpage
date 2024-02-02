@@ -53,11 +53,11 @@ const Testimonials = () => {
     }, [])
 
     return (
-        <section id="TESTIMONIES" className="w-full  h-auto flex  flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 mt-6 gap-5 ">
+        <section id="TESTIMONIES" className="w-full flex  flex-col items-start justify-center relative lg:px-24 md:px-10 px-6  pt-2 md:pt-8 gap-5 ">
             <main className='w-full grid md:grid-cols-1 lg:gap-0 gap-8 md:gap-5 '>
                 {/* Text and Steps Container  */}
                 <div className='w-full flex flex-col gap-6 '>
-                    <Text as="p" className="font-semibold bg-gradient-to-r  from-black  to-blue-500 bg-clip-text text-transparent   text-center">
+                    <Text as="p" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent   text-center">
                         {TestimonialTexts.firstText}
                     </Text>
                     <Text as="h1" className="lg:text-5xl md:text-3xl text-4xl  bg-gradient-to-r from-red-500 to-purple-500 text-transparent bg-clip-text font-medium text-center">
