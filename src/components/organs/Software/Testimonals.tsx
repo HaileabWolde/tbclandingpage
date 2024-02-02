@@ -9,7 +9,6 @@ import ProfileImg1 from "../../../assets/profile1.jpeg"
 import ProfileImg2 from "../../../assets/profile2.jpeg"
 import ProfileImg3 from "../../../assets/profile3.jpeg"
 import ProfileImg4 from "../../../assets/profile4.jpeg"
-import "./Testimonals.css"
 
 const Testimonials = ()=> {
     const sliderRef = useRef<Slider | null>();
@@ -25,7 +24,26 @@ const Testimonials = ()=> {
         slidesToShow: 3,
         slidesToScroll: 1,
         swipeToSlide: true, // Allow swiping on mobile devices
-        adaptiveHeight: true, // Adjust the height of the carousel to the current slide
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              initialSlide: 2,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: false,
+            },
+          },
+        ] // Adjust the height of the carousel to the current slide
 
     };
 
@@ -67,7 +85,7 @@ const Testimonials = ()=> {
                   key={index}
                   cardClass={` ${ middleSlide === index
                     ? " bg-opacity-100 transform scale-110"
-                    : "disabled"} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
+                    : " bg-opacity-100 md:opacity-50 md:pointer-events-none  "} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
                   imageAlt={feedback.person}
                   imageSrc={renderProfileImg(index)}
                   imageWrapperClass="w-[90px] h-[90px] rounded-[50%] overflow-hidden mx-auto"
@@ -100,8 +118,8 @@ const Testimonials = ()=> {
                   ['Mike taylor', 'Gina', 'Emma', 'Loveth'].map((item, index)=> (
                     <Button
                     key={item + index}
-                    className={`w-2 h-2 rounded-[50%] bg-[white] m-1 cursor-pointer ${
-                        activeSlide === index ? "bg-[#4797C6] rounded-lg pl-[14px] pr-[14px]" : ""
+                    className={`w-2 h-2 rounded-[50%] m-1 cursor-pointer ${
+                        activeSlide === index ? "bg-[#4698CC] rounded-lg pl-[14px] pr-[14px]" : " bg-gradient-to-r from-red-200 to-red-500"
                       } transition-colors duration-200 ease-in-out p-[6px]`}
                       onClick={() => {
                         sliderRef.current?.slickGoTo(index);
