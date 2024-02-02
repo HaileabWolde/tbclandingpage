@@ -6,6 +6,13 @@ export default {
       pointerEvents: {
         'none': 'none',
       },
+      colors: {
+        color1: "#f87073",
+        color2: "#FA9C0F",
+        color3: "#152F37",
+        color4: "#35528B",
+        color5: "#ffffff",
+      },
       fontFamily: {
         poppins: ["Poppins"],
       },

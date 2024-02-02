@@ -85,7 +85,7 @@ const Testimonials = ()=> {
                   key={index}
                   cardClass={` ${ middleSlide === index
                     ? " bg-opacity-100 transform scale-110"
-                    : " bg-opacity-100 md:opacity-50 md:pointer-events-none  "} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
+                    : " bg-opacity-100 md:opacity-50 md:pointer-events-none"} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
                   imageAlt={feedback.person}
                   imageSrc={renderProfileImg(index)}
                   imageWrapperClass="w-[90px] h-[90px] rounded-[50%] overflow-hidden mx-auto"
