@@ -9,6 +9,7 @@ import Mobile_Development from "./components/pages/MobileDevelopment";
 import Software from "./components/pages/Software Development";
 import Consulting from "./components/pages/Consulting";
 import ERP from "./components/pages/ERP";
+import Enginnering from "./components/pages/Engineering";
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../reduxToolkit/hooks";
 import { getClients } from "../reduxToolkit/features/tbcClients/clientSlice";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/services/Software Development" element={<Software/>}/>
         <Route path="/services/Technology Consultancy" element={<Consulting/>}/>
         <Route path="/services/ERP system" element={<ERP/>}/>
+        <Route path="/services/Data Engineering" element={<Enginnering/>}/>
         
       </Routes>
       <Footer />
