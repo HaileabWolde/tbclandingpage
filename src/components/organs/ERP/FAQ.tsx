@@ -14,7 +14,7 @@ const FAQ = () => {
 
   return (
     <section className="w-full bg-gradient-to-b from-gray-100 to-gray-100">
-      <main className="w-[80%] pb-[150px] flex flex-col gap-12 mx-auto">
+      <main className="w-[80%]  flex flex-col gap-12 mx-auto">
         <Text className="w-full flex flex-col justify-center text-3xl font-serif mt-[50px] font-bold">
           FAQ
         </Text>

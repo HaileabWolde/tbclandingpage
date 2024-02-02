@@ -24,18 +24,18 @@ const Services = ()=>{
     }, [])
 
     return (
-        <section id="ABOUT" className="w-full mt-[20px] md:mt-[50px] flex flex-col ">
+        <section id="ABOUT" className="w-full  flex flex-col ">
             <motion.div
             whileInView={{y: [100 ,50,  0], opacity: [0, 0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}
             >
             <main className="w-full bg-gradient-to-b from-gray-100 to-gray-100 pb-[20px] flex flex-col gap-12">
                 <Text
-                className="w-full flex flex-col items-center  justify-center text-3xl font-serif mt-[50px] font-bold pl-3 md:pl-0"
+                className="w-full flex flex-col items-center  justify-center text-3xl font-serif mt-[50px] font-bold pl-3 md:pl-0 bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent"
                 >
                 Why Choose Coherent Solutions for Technolgy Consultancy?
                 </Text>
-                <ul className="w-full md:w-[80%]  mx-auto flex flex-col md:flex-row justify-between flex-wrap md:items-center pl-4 md:pl-0">
+                <ul className="w-full md:ml-[200px] md:w-[80%]  mx-auto flex flex-col md:flex-row justify-between flex-wrap md:items-center pl-4 md:pl-0">
                     
                     {
                         DataOne.cards.map((card, index)=> (
@@ -47,7 +47,7 @@ const Services = ()=>{
                                     </Text>
                                     <Text className="flex flex-col gap-3">
                                         <Text
-                                        as="h2" className="w-full font-serif text-2xl font-bold"
+                                        as="h2" className="w-full font-serif text-2xl font-bold bg-gradient-to-r from-red-500 to-purple-500 text-transparent bg-clip-text"
                                         >
                                             {card.firstText}
                                         </Text>
