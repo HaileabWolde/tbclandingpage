@@ -30,7 +30,7 @@ const Brands = ()=> {
         }
     }, []);
     return (
-        <section id="CLIENTS"  className="w-full  bg-[#edf2f8] p-8">
+        <section id="CLIENTS"  className="w-full  bg-[#edf2f8] md:py-[100px]">
             <motion.div
             whileInView={{opacity:[0, 1]}}
             transition={{duration: 0.5, ease: 'easeInOut'}}
@@ -44,7 +44,7 @@ const Brands = ()=> {
                         {
                             DataOne.cards.map((card, index)=> (
                                 <Card
-                                cardClass="w-[90px] h-[90px] flex flex-col justify-center items-center rounded-[50%] shadow-md bg-white"
+                                cardClass="w-[90px] h-[90px] flex flex-col justify-center items-center rounded-lg shadow-md bg-white"
                                 imageAlt="Card.image"
                                 imageSrc={renderServiceIcon(index)}
                                 imageWrapperClass="w-[50%] h-[50%]"

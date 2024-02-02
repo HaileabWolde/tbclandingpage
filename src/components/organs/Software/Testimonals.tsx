@@ -72,7 +72,7 @@ const Testimonials = ()=> {
     }
     console.log(middleSlide)
     return (
-        <section id="TESTIMONIES" className="w-full mb-4">
+        <section id="TESTIMONIES" className="w-full">
           <main className="w-full  bg-gradient-to-b from-gray-100 to-gray-100 py-[100px]">
             
                 <Slider
