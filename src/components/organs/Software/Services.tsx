@@ -23,7 +23,7 @@ const Services = ()=>{
     }, [])
 
     return (
-        <section id="ABOUT" className="w-full mt-[20px] md:mt-[50px] flex flex-col ">
+        <section id="ABOUT" className="w-full  flex flex-col ">
             <motion.div
             whileInView={{y: [100 ,50,  0], opacity: [0, 0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}
@@ -34,7 +34,7 @@ const Services = ()=>{
                 >
                 Why Choose Coherent Solutions for Your Software Application?
                 </Text>
-                <ul className="w-full md:w-[80%]  mx-auto flex flex-col md:flex-row justify-between flex-wrap md:items-center pl-4 md:pl-0">
+                <ul className="w-full md:ml-[200px]  md:w-[80%]  mx-auto flex flex-col md:flex-row justify-between flex-wrap md:items-center pl-8 md:pl-0">
                     
                     {
                         DataOne.cards.map((card, index)=> (

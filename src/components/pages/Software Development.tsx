@@ -4,15 +4,17 @@ import Services from "../organs/Software/Services"
 import Platform from "../organs/Software/Platforms"
 import FAQ from "../organs/Software/FAQ"
 import Testimonials from "../organs/Software/Testimonals"
+import NewsLetter from "../organs/Software/Contact"
 const Software = ()=> {
     return (
        <>
        <HeroSection/>
-       <Brands/>
        <Services/>
-       <Platform/>
+       <Brands/>
        <Testimonials/>
+       <Platform/>
        <FAQ/>
+       <NewsLetter/>
        </>
     )
 }

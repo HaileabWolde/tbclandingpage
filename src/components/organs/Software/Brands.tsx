@@ -30,23 +30,24 @@ const Brands = ()=> {
         }
     }, []);
     return (
-        <section id="CLIENTS"  className="w-full ">
+        <section id="CLIENTS"  className="w-full  bg-[#edf2f8] p-8">
             <motion.div
             whileInView={{opacity:[0, 1]}}
             transition={{duration: 0.5, ease: 'easeInOut'}}
             >
             <Text
                 as="h2" 
-                className="w-full font-serif font-bold text-3xl flex flex-col items-center mt-[70px] md:mt-[90px] mb-[50px]">
+                className="w-full font-serif font-bold text-3xl flex flex-col items-center  mb-[50px]">
                     Our Previous Works
                 </Text>
-                <div className="w-[80%] flex flex-col gap-4 md:gap-0  md:flex-row items-center justify-between flex-wrap mx-auto">
+                <div className="w-[80%] flex flex-col gap-4 md:gap-0  md:flex-row items-center justify-between flex-wrap mx-auto pb-4">
                         {
                             DataOne.cards.map((card, index)=> (
                                 <Card
-                                cardClass="w-[90px] h-[90px] flex flex-col justify-center items-center"
+                                cardClass="w-[90px] h-[90px] flex flex-col justify-center items-center rounded-[50%] shadow-md bg-white"
                                 imageAlt="Card.image"
                                 imageSrc={renderServiceIcon(index)}
+                                imageWrapperClass="w-[50%] h-[50%]"
                                cover="object-fit"
                                 >
 
