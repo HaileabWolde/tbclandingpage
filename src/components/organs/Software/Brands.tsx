@@ -37,7 +37,7 @@ const Brands = ()=> {
             >
             <Text
                 as="h2" 
-                className="w-full font-serif font-bold text-3xl flex flex-col items-center  mb-[50px]">
+                className="w-full font-serif font-bold text-3xl flex flex-col items-center  mb-[50px] bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent">
                     Our Previous Works
                 </Text>
                 <div className="w-[80%] flex flex-col gap-4 md:gap-0  md:flex-row items-center justify-between flex-wrap mx-auto pb-4">

@@ -37,7 +37,7 @@ const Platform = ()=> {
             >
             <Text
         as="h2" 
-        className="w-[100vw] font-serif font-bold text-2xl md:text-3xl flex flex-col items-center mb-[50px] ml-2">
+        className="w-[100vw] font-serif font-bold text-2xl md:text-3xl flex flex-col items-center mb-[50px] ml-2 bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent">
             Technology and Platforms
         </Text>
         <div className=" w-full md:w-[80%] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 flex-wrap mx-auto">

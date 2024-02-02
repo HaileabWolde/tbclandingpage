@@ -30,7 +30,7 @@ const Services = ()=>{
             >
             <main className="w-full bg-gradient-to-b from-gray-100 to-gray-100 pb-[20px] flex flex-col gap-12">
                 <Text
-                className="w-full flex flex-col items-center  justify-center text-3xl font-serif mt-[50px] font-bold pl-3 md:pl-0"
+                className="w-full flex flex-col items-center  justify-center text-3xl font-serif mt-[50px] font-bold pl-3 md:pl-0 bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent"
                 >
                 Why Choose Coherent Solutions for Your Software Application?
                 </Text>
@@ -46,7 +46,7 @@ const Services = ()=>{
                                     </Text>
                                     <Text className="flex flex-col gap-3">
                                         <Text
-                                        as="h2" className="w-full font-serif text-2xl font-bold"
+                                        as="h2" className="w-full font-serif text-2xl font-bold bg-gradient-to-r from-red-500 to-purple-500 text-transparent bg-clip-text"
                                         >
                                             {card.firstText}
                                         </Text>

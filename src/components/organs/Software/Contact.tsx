@@ -53,7 +53,7 @@ const NewsLetter = () => {
           <main className="w-[90%] mx-auto flex flex-col md:flex-row justify-between">
             <div className="w-[100vw] pr-12 md:p-0 md:w-[50%] h-full">
                 <Text className="w-full  h-[80%] flex flex-col items-center justify-center py-6 md:py-8 gap-2">
-                    <h1 className="text-3xl font-bold font-serif bg-gradient-to-r  from-black  to-blue-500 bg-clip-text text-transparent">Unlocking Possibilities: Contact Us Now!</h1>
+                    <h1 className="text-3xl font-bold font-serif bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent">Unlocking Possibilities: Contact Us Now!</h1>
                 </Text>
 
             </div>
