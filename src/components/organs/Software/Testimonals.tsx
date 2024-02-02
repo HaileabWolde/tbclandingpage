@@ -66,7 +66,7 @@ const Testimonials = ()=> {
                 <Card
                   key={index}
                   cardClass={` ${ middleSlide === index
-                    ? " bg-opacity-100"
+                    ? " bg-opacity-100 transform scale-110"
                     : "disabled"} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
                   imageAlt={feedback.person}
                   imageSrc={renderProfileImg(index)}
@@ -101,7 +101,7 @@ const Testimonials = ()=> {
                     <Button
                     key={item + index}
                     className={`w-2 h-2 rounded-[50%] bg-[white] m-1 cursor-pointer ${
-                        activeSlide === index ? "bg-[#4169E1] rounded-lg pl-[14px] pr-[14px]" : ""
+                        activeSlide === index ? "bg-[#4797C6] rounded-lg pl-[14px] pr-[14px]" : ""
                       } transition-colors duration-200 ease-in-out p-[6px]`}
                       onClick={() => {
                         sliderRef.current?.slickGoTo(index);

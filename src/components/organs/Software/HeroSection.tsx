@@ -23,9 +23,9 @@ const HeroSection = ()=> {
           >
           <Text
         as="h1"
-        className=" lg:text-7xl md:text-5xl text-3xl font-bold text-gradient bg-gradient-to-r  from-black to-blue-500 bg-clip-text text-transparent  font-serif w-full text-center"
+        className=" lg:text-7xl md:text-5xl text-3xl font-bold text-gradient bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent  font-serif w-full text-center"
        >
-       Software App Development
+       Software Application Development
       </Text>
       
           </motion.div>

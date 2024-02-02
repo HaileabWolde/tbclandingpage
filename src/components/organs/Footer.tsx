@@ -11,7 +11,7 @@ import {
 import "./Fotter.css"
 const Footer = () => {
   return (
-    <footer id="CONTACT" className="w-full  flex flex-col bg-gradient-to-t from-[#89CFF3] to-[#00A9FF] relative">
+    <footer id="CONTACT" className="w-full  flex flex-col bg-gradient-to-t from-[#9AC9E3] to-[#4698CC] relative">
       <section className="w-full  md:overflow-hidden md:h-[230px] grid lg:grid-cols-5 md:grid-cols-3 lg:px-20 md:px-12 px-6   lg:gap-0">
         {/* TBC Logo */}
         <div class="custom-shape-divider-top-1705906384">
