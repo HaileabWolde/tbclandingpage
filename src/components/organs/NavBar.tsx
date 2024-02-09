@@ -10,13 +10,11 @@ const NavBar = () => {
     
     const [toggle, setToggle] = useState(false)
 
-    const [open, setOpen] = useState(false)
+   
     // const [scrollY, setScrollY] = useState(0)
     const [navBarColor, setNavBarColor] = useState(false)
 
-    const handleToggle = () => {
-        setOpen(!open)
-    }
+   
 
     const listenScrollEvent = () => {
         window.scrollY > 10 ? setNavBarColor(true) : setNavBarColor(false);
@@ -39,7 +37,7 @@ const NavBar = () => {
                     <nav className={`w-full navbar bg-[#f2f7fb] bg-opacity-80  lg:px-24 md:px-12 px-8 flex justify-between items-center border border-white border-opacity-100`}>
                     <Image as="a" href="/" className="md:h-24 h-20" image={Logo} alt="Logo" />
                     <div className="lg:flex hidden items-center mr-[200px]">
-                        <ul className="flex items-center justify-center gap-6">
+                        <ul className={`flex items-center justify-center gap-6 ${navBarColor}`}>
                             {
                                 NavLinks.map((navlink, index) => (
                                     <List className="text-lg" key={index}>

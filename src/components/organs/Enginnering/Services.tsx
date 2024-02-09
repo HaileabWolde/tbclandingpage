@@ -9,13 +9,13 @@ const Services = ()=>{
     const renderIcons = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return <FaCheckCircle size={15} color="currentColor" weight="fill" />;
+                return <FaCheckCircle size={15} color="currentColor"  />;
             case 1:
-                return <FaPuzzlePiece size={15} color="currentColor" weight="fill" />;
+                return <FaPuzzlePiece size={15} color="currentColor" />;
             case 2:
-                return <FaRocket size={15} color="currentColor" weight="fill" />;
+                return <FaRocket size={15} color="currentColor" />;
             case 3:
-                return <FaLock  size={15} color="currentColor" weight="fill" />;
+                return <FaLock  size={15} color="currentColor"  />;
             default:
                 return "";
         }

@@ -1,5 +1,5 @@
 type TextOwnProps<E extends React.ElementType> = {
-    className: string
+    className?: string
     children?: React.ReactNode
     as?: E
 }

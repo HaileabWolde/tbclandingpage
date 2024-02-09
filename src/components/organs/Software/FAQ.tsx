@@ -6,9 +6,9 @@ import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 import { DataOne } from "../../particles/SoftwareData/FAQ";
 
 const FAQ = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const handleCardClick = (index) => {
+  const handleCardClick = (index:number) => {
     setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -54,7 +54,6 @@ const FAQ = () => {
                   animate={{ opacity: 1, height: "auto" }}
                   transition={{ duration: 0.3 }}
                   className="mb-6"
-                  as="p"
                 >
                   {card.secondText}
                 </motion.div>

@@ -4,10 +4,10 @@ import partners2 from "../../assets/partners2.png";
 import partners3 from "../../assets/partners3.png";
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
-import { useAppSelector } from "../../../reduxToolkit/hooks";
+
 
 const Partners = () => {
-  const client = useAppSelector((state) => state.client.clientData);
+ 
   // Slider settings
   const settings = {
     dots: false,

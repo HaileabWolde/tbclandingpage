@@ -49,7 +49,7 @@ const Platform = ()=> {
                         imageAlt="Card.image"
                         imageSrc={renderServiceIcon(index)}
                         imageWrapperClass="w-[50%] h-[50%]"
-                       cover="object-fit"
+                        cover={`object-fit ${card}`} 
                         >
 
                         </Card>

@@ -1,9 +1,7 @@
 import { useCallback } from "react";
 import { List } from "../../atoms/List";
 import { motion } from "framer-motion";
-import { Card } from "../../molecules/Card";
 import { Text } from "../../atoms/Text";
-import { Link } from "react-router-dom";
 import { FaStar, FaCog, FaLink, FaWrench } from 'react-icons/fa';
 import { DataOne } from "../../particles/MobileData/MobileSol";
 const Services = ()=>{
@@ -11,13 +9,13 @@ const Services = ()=>{
     const renderIcons = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return <FaStar size={15} color="currentColor" weight="fill" />;
+                return <FaStar size={15} color="currentColor"/>;
             case 1:
-                return <FaCog size={15} color="currentColor" weight="fill" />;
+                return <FaCog size={15} color="currentColor"/>;
             case 2:
-                return <FaLink size={15} color="currentColor" weight="fill" />;
+                return <FaLink size={15} color="currentColor"/>;
             case 3:
-                return <FaWrench size={15} color="currentColor" weight="fill" />;
+                return <FaWrench size={15} color="currentColor"/>;
             default:
                 return "";
         }

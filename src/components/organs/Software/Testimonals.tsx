@@ -61,7 +61,7 @@ const Testimonials = ()=> {
                 return "";
         }
     }, [])
-    const Checkup = (index)=> {
+    const Checkup = (index:number)=> {
         if(index === 4){
             const newINDEX = 0
             return setMiddleSlide( newINDEX)

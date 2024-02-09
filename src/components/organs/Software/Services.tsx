@@ -10,13 +10,13 @@ const Services = ()=>{
     const renderIcons = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return <FaStar size={15} color="currentColor" weight="fill" />;
+                return <FaStar size={15} color="currentColor" />;
             case 1:
-                return <FaCog size={15} color="currentColor" weight="fill" />;
+                return <FaCog size={15} color="currentColor"  />;
             case 2:
-                return <FaLink size={15} color="currentColor" weight="fill" />;
+                return <FaLink size={15} color="currentColor" />;
             case 3:
-                return <FaWrench size={15} color="currentColor" weight="fill" />;
+                return <FaWrench size={15} color="currentColor"/>;
             default:
                 return "";
         }

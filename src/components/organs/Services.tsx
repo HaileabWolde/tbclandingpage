@@ -33,13 +33,18 @@ const Services = () => {
                 return "";
         }
     }, []);
-    const [expandedCards, setExpandedCards] = useState(() =>
-    [ServiceTexts.cards.length].fill(false)
-  );
+    const [expandedCards, setExpandedCards] = useState<Array<number | boolean>>(() => {
+        const length = ServiceTexts.cards.length;
+        const initialArray: Array<number | boolean> = [];
+        for (let i = 0; i < length; i++) {
+          initialArray.push(false);
+        }
+        return initialArray;
+      });
 
-  const handleRead = (event, index) => {
-    event.preventDefault();
-    event.stopPropagation();
+  const handleRead = (e:React.MouseEvent<HTMLButtonElement, MouseEvent>, index:number) => {
+    e.preventDefault();
+    e.stopPropagation();
     setExpandedCards((prev) => {
       const newExpandedCards = [...prev];
       newExpandedCards[index] = !newExpandedCards[index];
@@ -47,7 +52,7 @@ const Services = () => {
     });
   };
 
-  const truncateText = (text, characterLimit) => {
+  const truncateText = (text:string , characterLimit:number) => {
     if (text.length <= characterLimit) {
       return text;
     }
@@ -85,7 +90,7 @@ const Services = () => {
                                 </Text>
                                 
                                 <Text className="text-sm  font-light  text-color3 flex flex-col p-2">
-                                    <p>{ expandedCards[index] ? card.secondText : truncateText(card.secondText, 180)} <span>  <button className="font-semibold hover:underline" onClick={(event)=> handleRead(event, index)}>{expandedCards[index] ? 'Less' : 'Read More'}</button> </span></p>
+                                    <p>{ expandedCards[index] ? card.secondText : truncateText(card.secondText, 180)} <span>  <button className="font-semibold hover:underline" onClick={(e)=> handleRead(e, index)}>{expandedCards[index] ? 'Less' : 'Read More'}</button> </span></p>
                                    
                                 </Text> 
                                 

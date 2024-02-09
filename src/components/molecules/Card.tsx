@@ -2,7 +2,7 @@ import { Image } from "../atoms/Image";
 import { Text } from "../atoms/Text";
 
 type CardProps = {
-  clientName: string | null;
+  clientName?: string | null;
   cardClass: string;
   imageWrapperClass: string;
   imageAlt: string;
