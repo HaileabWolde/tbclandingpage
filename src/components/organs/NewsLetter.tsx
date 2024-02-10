@@ -17,8 +17,8 @@ const NewsLetter = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          'service_bqillxc',
-          'template_2xe1z6v',
+          'service_7q98i84',
+          'template_nb02r3t',
           form.current,
           'YvHMh0v59uU5JOosO'
         )
