@@ -3,12 +3,12 @@ import { useState } from "react";
 import { useCallback, useRef } from "react";
 import Slider from "react-slick";
 import { Button } from "../../atoms/Button";
-import { TestimonialTexts } from "../../particles/Testimonies"
+import { TestimonialTexts } from "../../particles/MobileData/MobileTestimonies"
 import { Card } from "../../molecules/Card";
-import ProfileImg1 from "../../../assets/profile1.jpeg"
-import ProfileImg2 from "../../../assets/profile2.jpeg"
-import ProfileImg3 from "../../../assets/profile3.jpeg"
-import ProfileImg4 from "../../../assets/profile4.jpeg"
+import ProfileImg1 from "../../../assets/Engida.png"
+import ProfileImg2 from "../../../assets/tbc_logo/TBCONE.png"
+import ProfileImg3 from "../../../assets/Gafat.png"
+import ProfileImg4 from "../../../assets/Excellence.png"
 
 const Testimonials = ()=> {
     const sliderRef = useRef<Slider | null>();
@@ -88,17 +88,13 @@ const Testimonials = ()=> {
                     : " bg-opacity-100 md:opacity-50 md:pointer-events-none"} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
                   imageAlt={feedback.person}
                   imageSrc={renderProfileImg(index)}
-                  imageWrapperClass="w-[90px] h-[90px] rounded-[50%] overflow-hidden mx-auto"
+                  imageWrapperClass="w-[35%] h-[35%] overflow-hidden mx-auto"
                   cover="object-fit"
                 >
                     <Text
                     className="w-[70%] mx-auto flex flex-col items-center mt-4 gap-2 "
                     >
-                        <Text
-                        >
-                            <h4>{feedback.person}</h4>
-                            
-                        </Text>
+                        
                         <Text>
                             <h4>{feedback.location}</h4>
                         </Text>

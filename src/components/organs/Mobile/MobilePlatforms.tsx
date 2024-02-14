@@ -6,9 +6,7 @@ import { Card } from "../../molecules/Card"
 import flutter from "../../../assets/flutter.png"
 import node from "../../../assets/node.png"
 import react from "../../../assets/react.png"
-import sass from "../../../assets/sass.png"
-import python from "../../../assets/python.png"
-import typescript from "../../../assets/typescript.png"
+import Android from "../../../assets/Android.png"
 
 const Platform = ()=> {
     const renderServiceIcon = useCallback((element: number) => {
@@ -20,11 +18,7 @@ const Platform = ()=> {
             case 2:
                 return react;
             case 3:
-                return sass;
-            case 4:
-                return python;
-            case 5:
-                return typescript;
+                return  Android;
             default:
                 return "";
         }
@@ -43,7 +37,7 @@ const Platform = ()=> {
         <div 
        className=" w-full md:w-[80%] flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 flex-wrap mx-auto">
                 {
-                    DataOne.cards.map((card, index)=> (
+                    DataOne.cardsOne.map((card, index)=> (
                         <Card
                         cardClass="w-[90px] h-[90px] flex flex-col justify-center items-center  rounded-[50%] shadow-md bg-white"
                         imageAlt="Card.image"
