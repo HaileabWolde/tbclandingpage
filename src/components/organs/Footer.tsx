@@ -160,7 +160,7 @@ const Footer = () => {
       {/* Copyright */}
       <Text className="md:text-center px-6 md:px-0  text-xs flex flex-col md:flex-row flex-wrap justify-center gap-2">
         <p className="font-bold">Ethiopia</p>
-        <p className="">+251911581886</p>
+        <p className="">+251911581887</p>
         <p className="font-bold ">USA</p>
         <p className="">+13016553123</p>
         <p className="font-bold">Email</p>
