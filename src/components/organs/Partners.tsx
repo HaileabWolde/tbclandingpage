@@ -1,7 +1,8 @@
 import Slider from "react-slick";
-import partners1 from "../../assets/partners1.png";
-import partners2 from "../../assets/partners2.png";
-import partners3 from "../../assets/partners3.png";
+import partners1 from "../../assets/Engida.png";
+import partners2 from "../../assets/tbc_logo/TBCONE.png";
+import partners3 from "../../assets/Gafat.png";
+import partner4 from "../../assets/Excellence.png"
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
 
@@ -13,14 +14,14 @@ const Partners = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -60,70 +61,63 @@ const Partners = () => {
         {...settings}
         className="w-full flex gap-6 justify-center lg:items-center mt-6 pb-6"
       >
-        <Card
-          clientName="ENgida"
-          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center "
+        <Card    
+          cardClass="px-5 py-5 bg-white rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
           imageAlt="partenrsLogo"
           imageSrc={partners1}
-          imageWrapperClass="w-[120px] h-[50px]"
+          imageWrapperClass="w-[90%] h-[90%]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="px-5 py-5 bg-white  rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
           imageAlt="partenrsLogo"
           imageSrc={partners2}
-          imageWrapperClass="w-[120px] h-[50px]"
+          imageWrapperClass="w-[90%] h-[90%]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="px-5 py-5 bg-white rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
           imageAlt="partenrsLogo"
           imageSrc={partners3}
-          imageWrapperClass="w-[120px] h-[50px]"
+          imageWrapperClass="w-[90%] h-[90%]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="px-5 py-5 bg-white  rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
+          imageAlt="partenrsLogo"
+          imageSrc={partner4}
+          imageWrapperClass="w-[90%] h-[90%]"
+          cover="object-contain"
+        />
+       <Card    
+          cardClass="px-5 py-5 bg-white rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
           imageAlt="partenrsLogo"
           imageSrc={partners1}
-          imageWrapperClass="w-[120px] h-[50px]"
+          imageWrapperClass="w-[90%] h-[90%]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="px-5 py-5 bg-white  rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
           imageAlt="partenrsLogo"
           imageSrc={partners2}
-          imageWrapperClass="w-[120px] h-[50px]"
+          imageWrapperClass="w-[90%] h-[90%]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="px-5 py-5 bg-white rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
           imageAlt="partenrsLogo"
           imageSrc={partners3}
-          imageWrapperClass="w-[120px] h-[50px]"
+          imageWrapperClass="w-[90%] h-[90%]"
           cover="object-contain"
         />
         <Card
-          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
+          cardClass="px-5 py-5 bg-white  rounded-lg cursor-pointer flex item-center justify-center h-[180px]"
           imageAlt="partenrsLogo"
-          imageSrc={partners1}
-          imageWrapperClass="w-[120px] h-[50px]"
+          imageSrc={partner4}
+          imageWrapperClass="w-[90%] h-[90%]"
           cover="object-contain"
         />
-        <Card
-          cardClass="p-12 bg-white  rounded-lg cursor-pointer flex item-center justify-center"
-          imageAlt="partenrsLogo"
-          imageSrc={partners2}
-          imageWrapperClass="w-[120px] h-[50px]"
-          cover="object-contain"
-        />
-        <Card
-          cardClass="p-12 bg-white rounded-lg cursor-pointer flex item-center justify-center"
-          imageAlt="partenrsLogo"
-          imageSrc={partners3}
-          imageWrapperClass="w-[120px] h-[50px]"
-          cover="object-contain"
-        />
+       
       </Slider>
       
     </section>
