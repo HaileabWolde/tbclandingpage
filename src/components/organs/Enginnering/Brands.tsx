@@ -9,7 +9,7 @@ import BrandThree from "../../../assets/BrandThree.png"
 import BrandFour from "../../../assets/BrandFour.png"
 import BrandFive from "../../../assets/BrandFive.png"
 import BrandSix from "../../../assets/BrandSix.png"
-
+/* Brands*/
 const Brands = ()=> {
     const renderServiceIcon = useCallback((element: number) => {
         switch (element) {
