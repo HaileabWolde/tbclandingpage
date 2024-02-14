@@ -1,5 +1,4 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-//importing react slick slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { animateScroll } from "react-scroll";
@@ -21,7 +20,7 @@ function App() {
   const directory = useLocation();
 
   const client = useAppSelector((state) => state.client.clientData);
-  console.log("🚀 ~ file: App.tsx:18 ~ App ~ client:", client);
+  
 
   useEffect(() => {
     dispatch(getClients());
