@@ -11,11 +11,11 @@ export const TestimonialTexts = {
             location: "ENGIDIEA SOLUTION"
         },
         {
-            text: "The mobile application developed by TBC Technology Solutions is nothing short of brilliant. It's user-friendly, feature-rich, and has exceeded our expectations.",
+            text: "Outstanding IT support, surveying, and data analysis from TBC Solutions. They streamlined our operations and exceeded expectations. Highly recommended!",
             location: "GAFAT TECHNOLOGY"
         },
         {
-            text: "TBC Technology Solutions has delivered an exceptional mobile app that has revolutionized our operations. It's a perfect blend of functionality, design, and reliability.",
+            text: "We had a great experience with their IT support, surveying, and data analysis services.Their support was crucial in optimizing our operations, and we were impressed by their commitment to excellence.",
             location: "EXCELLENCE CONSULTANCY"
         },
     ],
