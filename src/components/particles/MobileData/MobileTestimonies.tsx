@@ -1,5 +1,5 @@
 export const TestimonialTexts = {
-    firstText: "Testimonies  From Our Clients",
+    firstText: "Testimonies From Our Clients",
     secondText: "What People Say About Us",
     feedBacks: [
         {

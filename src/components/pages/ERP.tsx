@@ -1,7 +1,7 @@
 import HeroSection from "../organs/ERP/HeroSection";
 import Brands from "../organs/ERP/Brands";
 import Services from "../organs/ERP/Services";
-import Platform from "../organs/ERP/Platform";
+//import Platform from "../organs/ERP/Platform";
 import FAQ from "../organs/ERP/FAQ";
 import Testimonials from "../organs/ERP/Testimonials";
 import NewsLetter from "../organs/ERP/Contact";
@@ -10,9 +10,10 @@ const ERP = ()=> {
         <>
         <HeroSection/>
         <Services/>
-        <Brands/> 
+         {/*<Brands/>*/}
         <Testimonials/>  
-        <Platform/>
+        {/*<Platform/>*/}
+       
         <FAQ/>
         <NewsLetter/>
         </>

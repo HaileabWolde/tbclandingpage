@@ -5,15 +5,14 @@ import Slider from "react-slick";
 import { Button } from "../../atoms/Button";
 import { TestimonialTexts } from "../../particles/ConsultacyData/Consultancy Testimonies"
 import { Card } from "../../molecules/Card";
-import ProfileImg1 from "../../../assets/Engida.png"
-import ProfileImg2 from "../../../assets/tbc_logo/TBCONE.png"
-import ProfileImg3 from "../../../assets/Gafat.png"
-import ProfileImg4 from "../../../assets/Excellence.png"
+import ProfileImg1 from "../../../assets/Gafat.png"
+import ProfileImg2 from "../../../assets/Excellence.png"
 import {  FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+
 const Testimonials = ()=> {
     const sliderRef = useRef<Slider | null>();
     const [activeSlide, setActiveSlide] = useState(0);
-    const [middleSlide, setMiddleSlide] = useState(1);
+   
     // Function for next button
     
 
@@ -21,7 +20,7 @@ const Testimonials = ()=> {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         swipeToSlide: true, // Allow swiping on mobile devices
         adaptiveHeight: true,
@@ -53,42 +52,31 @@ const Testimonials = ()=> {
                 return ProfileImg2;
             case 1:
                 return ProfileImg1;
-            case 2:
-                return ProfileImg3;
-            case 3:
-                return ProfileImg4;
             default:
                 return "";
         }
     }, [])
-    const Checkup = (index:number)=> {
-        if(index === 4){
-            const newINDEX = 0
-            return setMiddleSlide( newINDEX)
-        }
-        else{
-            return setMiddleSlide(index)
-        }
-    }
-    console.log(middleSlide)
+   
     return (
         <section id="TESTIMONIES" className="w-full">
           <main className="w-full  bg-gradient-to-b from-gray-100 to-gray-100 py-[100px]">
-            
+                    <Text as="h1" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent text-center text-3xl mb-4">
+                        {TestimonialTexts.firstText}
+                    </Text>
                 <Slider
                     ref={(slider) => (sliderRef.current = slider)}
                     {...settings}
-                    className="flex justify-between w-[90%] mx-auto overflow-hidden"
+                    className="flex justify-between w-[80%] mx-auto overflow-hidden"
                 >
               {TestimonialTexts.feedBacks.map((feedback, index) => (
                 <Card
                   key={index}
-                  cardClass={` ${ middleSlide === index
+                  cardClass={` ${ activeSlide === index
                     ? " bg-opacity-100 transform scale-110"
                     : " bg-opacity-100 md:opacity-50 md:pointer-events-none"} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
-                  imageAlt="Person"
+                  imageAlt="Hello"
                   imageSrc={renderProfileImg(index)}
-                  imageWrapperClass="w-[35%] h-[35%] overflow-hidden mx-auto"
+                  imageWrapperClass="w-[30%] h-[30%] overflow-hidden mx-auto"
                   cover="object-fit"
                 >
                     <Text
@@ -96,14 +84,16 @@ const Testimonials = ()=> {
                     >
                         
                         <Text>
-                            <h4 className="font-serif font-semibold">{feedback.location}</h4>
+                            <h4 className="font-semibold font-serif">{feedback.location}</h4>
                         </Text>
                         <Text>
-                        <FaQuoteLeft className={`${middleSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
+                      
+                          <FaQuoteLeft className={`${activeSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
                             <h4 className="font-serif text-sm">{feedback.text}</h4>
                             <div className="w-full flex flex-col items-end">
-                            <FaQuoteRight className={`${middleSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
+                            <FaQuoteRight className={`${activeSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
                             </div>
+                           
                         </Text>
                     </Text>
                    
@@ -115,7 +105,7 @@ const Testimonials = ()=> {
               className=" flex w-full  justify-center mt-8"
               >
               {
-                  ['Mike taylor', 'Gina', 'Emma', 'Loveth'].map((item, index)=> (
+                  ['GAFAT TECHNOLOGY', 'EXCELLENCE CONSULTANCY'].map((item, index)=> (
                     <Button
                     key={item + index}
                     className={`w-2 h-2 rounded-[50%] m-1 cursor-pointer ${
@@ -124,7 +114,6 @@ const Testimonials = ()=> {
                       onClick={() => {
                         sliderRef.current?.slickGoTo(index);
                         setActiveSlide(index);
-                        Checkup(index + 1);
                       }}
                     >
                       
