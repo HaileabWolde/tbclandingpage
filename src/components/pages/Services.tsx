@@ -10,7 +10,7 @@ const ManagingServices = ()=>{
        <>
        <HeroSection/>
        <Services/>
-       <Brands/>
+        {/*<Brands/>*/}
        <Testimonials/>
        {/*<Platform/>*/}
        <FAQ/>
