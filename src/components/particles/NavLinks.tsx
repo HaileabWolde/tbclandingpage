@@ -1,11 +1,12 @@
 export const NavLinks = [
     {
         name: "HOME",
-        url: "/"
+        url: "home",
+
     },
     {
         name: "SOLUTIONS",
-        url: "/"
+        url: "solutions"
     },
     {
         name: "TESTIMONIES",
@@ -13,7 +14,7 @@ export const NavLinks = [
     },
     {
         name: "CLIENTS",
-        url: "/"
+        url: "clients"
     },
     {
         name: "ABOUT",
