@@ -24,7 +24,7 @@ const Services = ()=>{
     }, [])
 
     return (
-        <section id="ABOUT" className="w-full  flex flex-col ">
+        <section id="ABOUT US" className="w-full  flex flex-col ">
             <motion.div
             whileInView={{y: [100 ,50,  0], opacity: [0, 0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}

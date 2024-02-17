@@ -32,7 +32,7 @@ const HeroSection = ()=> {
           
       <Text
        
-       className="text-black md:text-lg text-sm  font-bold font-serif px-4 text-center"
+       className="text-black md:text-lg text-sm  font-light font-serif px-4 text-center"
      >
     Enhance Business Operations with Comprehensive Enterprise resource planning (ERP) Software in Ethiopia Streamlining Data. Integrated and implementing ERP software is the key to unlocking your team’s full potential. 
      </Text>

@@ -42,7 +42,8 @@ const NavBar = () => {
                                         else if(shouldHideElement && navlink.url === "solutions"){
                                             return null;//skip also rendering this element
                                         }
-                                        else if (shouldHideElement && (location.pathname === "/services/Software%20Development" || location.pathname === "/services/ERP%20system" || location.pathname === "/services/Data%20Engineering" || location.pathname === "/services/Managing%20Services") && navlink.url=== "clients"){
+                                        else if (shouldHideElement && (location.pathname === "/services/Software%20Development" || location.pathname === "/services/ERP%20system" || location.pathname === "/services/Data%20Engineering" || location.pathname === "/services/Managing%20Services")&&
+                                        (navlink.url === "clients" || navlink.url === "testimonies")){
                                             return null;
                                         }
                                         else if(location.pathname=== "/" && navlink.url=== "approach"){

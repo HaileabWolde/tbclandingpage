@@ -74,7 +74,7 @@ const Testimonials = ()=> {
    
     return (
         <section id="TESTIMONIES" className="w-full">
-          <main className="w-full  bg-gradient-to-b from-gray-100 to-gray-100 py-[100px]">
+          <main className="w-full  bg-gradient-to-b from-gray-100 to-gray-100 py-[40px] md:py-[100px]">
                 <div className='w-full flex flex-col gap-6 '>
                     <Text as="p" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent   text-center">
                         {TestimonialTexts.firstText}
@@ -109,7 +109,7 @@ const Testimonials = ()=> {
                         <Text>
                       
                           <FaQuoteLeft className={`${middleSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
-                            <h4 className="font-serif text-sm">{feedback.text}</h4>
+                            <h4 className="font-serif text-xs md:text-sm">{feedback.text}</h4>
                             <div className="w-full flex flex-col items-end">
                             <FaQuoteRight className={`${middleSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
                             </div>

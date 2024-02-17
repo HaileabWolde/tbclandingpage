@@ -75,7 +75,7 @@ const HeroSection = () => {
               </Text>
               <Text >
               <Button onClick={next} id="next"  className="cursor-pointer outline-none border-none text-white p-2 rounded-full bg-gray-800 hover:bg-gray-900" type="button">
-                            <CaretRight size={24} color="currentColor" weight="fill" />
+                            <CaretRight size={24}  color="currentColor" weight="fill" />
                         </Button>
               </Text>
               </div>
@@ -84,7 +84,7 @@ const HeroSection = () => {
                   ['TBC TECHNOLOGY SOLUTIONS', 'Adverstiment Technology', 'Software Outsorcing Project', 'It Consultancy', 'Software Development'].map((item, index)=> (
                     <Button
                     key={item + index}
-                    className="w-3 h-3 rounded-[50%] bg-[white] m-1 cursor-pointer hover:bg-[#4169E1] transition-colors duration-200 ease-in-out p-3"
+                    className="w-3 h-3 rounded-[50%] bg-[white] m-1 cursor-pointer hover:bg-[#4169E1] transition-colors duration-200 ease-in-out p-2 md:p-3"
                     style={card.firstText === item ? {backgroundColor: '#4169E1'} : {}}
                     onClick={next}
                     >
@@ -97,14 +97,14 @@ const HeroSection = () => {
               <motion.div
               whileInView={{x:[-100, 0], opacity: [0, 1]}}
               transition={{duration: 0.6,  delayChildren: 10}}
-              className="absolute top-[70px] md:top-[100px]  left-[60px] flex flex-col items-center justify-center gap-8 bg-white bg-opacity-80 w-[75%] h-[65%] md:w-[45%] px-2  md:h-[60%] lg:w-[50%]">
+              className="absolute top-[70px] md:top-[100px]  left-[80px] flex flex-col items-center justify-center gap-8 bg-white bg-opacity-80 w-[65%] h-[65%] md:w-[45%] px-2  md:h-[60%] lg:w-[50%]">
               <motion.div
                whileInView={{opacity:[0, 1]}}
                transition={{duration: 1, ease: 'easeInOut'}}
               >
               <Text
             as="h1"
-            className=" lg:text-7xl md:text-5xl text-3xl font-bold text-gradient bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent  font-serif w-full text-center"
+            className=" lg:text-7xl md:text-5xl text-2xl font-bold text-gradient bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent  font-serif w-full text-center"
            >
             {card.firstText}
           </Text>
@@ -113,7 +113,7 @@ const HeroSection = () => {
               
           <Text
            
-           className="text-black md:text-lg text-sm  font-bold font-serif px-4 text-center"
+           className="text-black md:text-lg text-sm  font-light font-serif px-4 text-center"
          >
            {card.secondText}
          </Text>
@@ -130,7 +130,7 @@ const HeroSection = () => {
                   <Chat size={20} color="currentColor" weight="fill" />
                 </Text>
               </Text>
-              <Button type="button" className="outline-none border-none font-serif">
+              <Button type="button" className="outline-none border-none font-serif text-sm md:text-base">
                 CONTACT US
               </Button>
             </div>

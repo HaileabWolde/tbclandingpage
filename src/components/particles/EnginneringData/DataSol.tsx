@@ -16,6 +16,28 @@ export const DataOne =  {
              firstText: "Data Governance and Security",
              secondText: "Our company recognizes the importance of data governance and security in today's data-driven world. You have established practices and protocols to ensure data privacy, compliance with regulations (such as GDPR or HIPAA), and protection against data breaches. Clients value your adherence to strict data governance standards, as it gives them peace of mind knowing that their data is handled with the utmost care and security."
          }
-    ]
+    ],
+    cardsOne: [
+        {
+            firstText: "Data Assessment and Discovery",
+            secondText: "Assess the client's existing data landscape, including sources, formats, and quality. Understand their data requirements and goals for data engineering."
+        },
+        {
+            firstText: "Data Collection and Integration",
+            secondText: "Collect data from various sources, such as databases, APIs, or external systems. Integrate and consolidate the data into a unified and structured format."
+        },
+        {
+            firstText: "Data Cleaning and Transformation",
+            secondText: "Cleanse the data by removing inconsistencies, redundancies, and errors. Perform transformations and standardizations to ensure data accuracy and consistency."
+        },
+        {
+            firstText: " Data Storage and Management",
+            secondText: "Design and implement a robust data storage infrastructure, such as data warehouses or data lakes. Develop efficient data management processes for storage, retrieval, and archival."
+        },
+        {
+            firstText: "Data Analysis and Visualization",
+            secondText: "Apply advanced analytics techniques, such as data mining or machine learning, to derive insights from the data. Create visualizations and reports to communicate findings to stakeholders."
+        }
+       ]
  }
  

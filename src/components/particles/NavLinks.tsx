@@ -10,14 +10,14 @@ export const NavLinks = [
     },
     {
         name: "TESTIMONIES",
-        url: "/"
+        url: "testimonies"
     },
     {
         name: "CLIENTS",
         url: "clients"
     },
     {
-        name: "ABOUT",
+        name: "ABOUT US",
         url: "/"
     },
     {

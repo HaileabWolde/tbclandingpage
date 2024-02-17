@@ -6,7 +6,7 @@ import { Card } from "../../molecules/Card"
 import planning from "../../../assets/Approach/Planning.png"
 import team from "../../../assets/Approach/Team Allocation Two.png"
 import development from "../../../assets/Approach/Development.png"
-import collabration from "../../../assets/Approach/Collabration.png"
+import deployment from "../../../assets/Approach Two/deployment.png"
 import Support from "../../../assets/Approach/Support.png"
 const Platform = ()=> {
     const renderServiceIcon = useCallback((element: number) => {
@@ -18,9 +18,9 @@ const Platform = ()=> {
             case 2:
                 return development;
             case 3:
-                return  collabration;
+                return  Support;
             case 4:
-                return Support;
+                return deployment;
             default:
                 return "";
         }

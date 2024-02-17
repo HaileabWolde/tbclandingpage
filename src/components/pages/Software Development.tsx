@@ -1,7 +1,7 @@
 import HeroSection from "../organs/Software/HeroSection"
 //import Brands from "../organs/Software/Brands"
 import Services from "../organs/Software/Services"
-//import Platform from "../organs/Software/Platforms"
+import Platform from "../organs/Software/Platforms"
 import FAQ from "../organs/Software/FAQ"
 import Testimonials from "../organs/Software/Testimonals"
 import NewsLetter from "../organs/Software/Contact"
@@ -12,7 +12,7 @@ const Software = ()=> {
        <Services/>
        {/*<Brands/>*/}
        {/*<Testimonials/>*/}
-       {/*<Platform/>*/}
+       <Platform/>
        <FAQ/>
        <NewsLetter/>
        </>
