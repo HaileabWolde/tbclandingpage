@@ -33,12 +33,12 @@ const Platform = ()=> {
             >
             <Text
         as="h2" 
-        className="w-[100vw] font-serif font-meduim text-2xl md:text-3xl flex flex-col items-center  mb-[50px] ml-2 ">
+        className="w-[100vw] font-serif font-meduim text-2xl md:text-3xl flex flex-col items-center  mb-[50px] ml-2 pt-8 md:pt-0 ">
           Our Approach is to <br/> <span className="font-semibold bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent">Make Your Dream A Reality!!!</span>
         </Text>
         <div 
        className=" w-full md:w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 flex-wrap px-4">
-                <div className=" flex flex-col md:flex-row gap-4">
+                <div className=" flex flex-col md:flex-row gap-4 pb-8 md:pb-0">
                 {
                     DataOne.cardsOne.map((card, index)=> (
                        <div className="flex flex-col items-center w-full ">
@@ -53,7 +53,7 @@ const Platform = ()=> {
                         </Card>
                         <Text className=" mt-3    flex flex-col gap-2 ">
                             <h1 className="font-semibold font-serif text-center">{card.firstText}</h1>
-                            <p className="font-serif text-sm ">{card.secondText}</p>
+                            <p className="font-serif text-lg px-3 md:px-0 md:text-sm ">{card.secondText}</p>
                         </Text>
                         </div>
                        )) }

@@ -61,7 +61,7 @@ const NewsLetter = () => {
       <main className="w-[90%] mx-auto flex flex-col md:flex-row justify-between">
         <div className="w-[100vw] pr-12 md:p-0 md:w-[50%] h-full">
           <Text className="w-full  h-[80%] flex flex-col items-center justify-center py-6 md:py-8 gap-2">
-            <h1 className="text-3xl font-bold font-serif bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent">
+            <h1 className="text-xl md:text-3xl font-bold font-serif bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent">
               Unlocking Possibilities: Contact Us Now!
             </h1>
           </Text>
@@ -87,7 +87,7 @@ const NewsLetter = () => {
               type="text"
               name="user_name"
               placeholder="Your Name"
-              className="p-4 border rounded-lg text-sm shadow-lg outline-none w-full md:w-[45%]"
+              className="p-4 border rounded-lg text-xs md:text-sm shadow-lg outline-none w-full md:w-[45%]"
               required
             />
             <input
@@ -122,7 +122,7 @@ const NewsLetter = () => {
               <button
                 type="submit"
                 value="Send"
-                className="bg-[#FF9900] w-full md:w-auto pt-2 pb-2 pl-12 pr-12 rounded-lg"
+                className="bg-[#FF9900] w-full md:w-auto pt-2 pb-2 pl-12 pr-12 rounded-lg text-sm md:text-base"
               >
                 {isLoading ? 'Send' : 'Sending ...'}
               </button>

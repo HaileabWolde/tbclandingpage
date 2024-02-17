@@ -15,7 +15,7 @@ const FAQ = () => {
   return (
     <section className="w-full bg-gradient-to-b from-gray-100 to-gray-100">
       <main className="w-[80%] flex flex-col gap-12 mx-auto">
-        <Text className="w-full flex flex-col justify-center text-3xl font-serif mt-[50px] font-bold">
+        <Text className="w-full flex flex-col justify-center text-xl md:text-3xl font-serif mt-[50px] font-bold">
           FAQ
         </Text>
         <ul className="w-full flex flex-col">
@@ -26,7 +26,7 @@ const FAQ = () => {
               key={index}
             >
               <Text className="w-full flex justify-between mb-6">
-                <Text className="text-2xl">{card.firstText}</Text>
+                <Text className="text-xl md:text-2xl">{card.firstText}</Text>
                 <Button onClick={() => handleCardClick(index)}>
                   {expandedIndex === index ? (
                     <motion.div

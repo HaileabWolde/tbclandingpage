@@ -66,13 +66,13 @@ const Testimonials = ()=> {
     return (
         <section id="TESTIMONIES" className="w-full">
           <main className="w-full  bg-gradient-to-b from-gray-100 to-gray-100 py-[100px]">
-                    <Text as="h1" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent text-center text-3xl mb-4">
+                    <Text as="h1" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent text-center text-2xl md:text-3xl mb-4">
                         {TestimonialTexts.firstText}
                     </Text>
                 <Slider
                     ref={(slider) => (sliderRef.current = slider)}
                     {...settings}
-                    className="flex justify-between w-[80%] mx-auto overflow-hidden"
+                    className="flex justify-center w-[80%] mx-auto overflow-hidden"
                 >
               {TestimonialTexts.feedBacks.map((feedback, index) => (
                 <Card

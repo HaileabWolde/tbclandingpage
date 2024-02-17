@@ -1,7 +1,7 @@
 import HeroSection from "../organs/Consulting/HeroSection"
 import Brands from "../organs/Consulting/Brands"
 import Services from "../organs/Consulting/Services"
-//import Platform from "../organs/Consulting/Platforms"
+import Platform from "../organs/Consulting/Platforms"
 import FAQ from "../organs/Consulting/FAQ"
 import Testimonials from "../organs/Consulting/Testimonals"
 import NewsLetter from "../organs/Consulting/Contact"
@@ -13,7 +13,7 @@ const Consulting = ()=> {
             <Brands/>
             <Testimonials/>
 
-            {/*<Platform/>*/}
+            <Platform/>
             <FAQ/>
             <NewsLetter/>
         </>

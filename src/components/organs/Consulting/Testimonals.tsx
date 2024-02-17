@@ -60,13 +60,13 @@ const Testimonials = ()=> {
     return (
         <section id="TESTIMONIES" className="w-full">
           <main className="w-full  bg-gradient-to-b from-gray-100 to-gray-100 py-[100px]">
-                    <Text as="h1" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent text-center text-3xl mb-4">
+                    <Text as="h1" className="font-semibold bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent text-center text-xl md:text-3xl mb-4">
                         {TestimonialTexts.firstText}
                     </Text>
                 <Slider
                     ref={(slider) => (sliderRef.current = slider)}
                     {...settings}
-                    className="flex justify-between w-[80%] mx-auto overflow-hidden"
+                    className="flex justify-center w-[80%] mx-auto overflow-hidden"
                 >
               {TestimonialTexts.feedBacks.map((feedback, index) => (
                 <Card
@@ -84,12 +84,12 @@ const Testimonials = ()=> {
                     >
                         
                         <Text>
-                            <h4 className="font-semibold font-serif">{feedback.location}</h4>
+                            <h4 className="font-semibold font-serif text-sm md:text-base">{feedback.location}</h4>
                         </Text>
                         <Text>
                       
                           <FaQuoteLeft className={`${activeSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
-                            <h4 className="font-serif text-sm">{feedback.text}</h4>
+                            <h4 className="font-serif text-xs md:text-sm">{feedback.text}</h4>
                             <div className="w-full flex flex-col items-end">
                             <FaQuoteRight className={`${activeSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
                             </div>
