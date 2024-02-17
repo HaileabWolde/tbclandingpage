@@ -9,6 +9,10 @@ export const NavLinks = [
         url: "solutions"
     },
     {
+        name: "Our Approach",
+        url: "approach"
+    },
+    {
         name: "TESTIMONIES",
         url: "/"
     },

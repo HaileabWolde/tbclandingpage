@@ -11,7 +11,7 @@ const Enginnering = ()=> {
        <HeroSection/>
        <Services/>
         {/*<Brands/>*/}
-       <Testimonials/>
+       {/*<Testimonials/>*/}
 
        {/*<Platform/>*/}
        <FAQ/>

@@ -11,7 +11,7 @@ const ManagingServices = ()=>{
        <HeroSection/>
        <Services/>
         {/*<Brands/>*/}
-       <Testimonials/>
+      {/*<Testimonials/>*/} 
        {/*<Platform/>*/}
        <FAQ/>
        <NewsLetter/>

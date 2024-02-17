@@ -23,7 +23,7 @@ const NavBar = () => {
 
     //Check if the current route matches any of the hidden routes
     const shouldHideElement = hiddenRoutes.includes(location.pathname)
- 
+
     return (
         <header className="w-full  bg-transparent overflow-hidden fixed z-50 top-0 left-0 ">
                 <motion.div
@@ -44,6 +44,9 @@ const NavBar = () => {
                                         }
                                         else if (shouldHideElement && (location.pathname === "/services/Software%20Development" || location.pathname === "/services/ERP%20system" || location.pathname === "/services/Data%20Engineering" || location.pathname === "/services/Managing%20Services") && navlink.url=== "clients"){
                                             return null;
+                                        }
+                                        else if(location.pathname=== "/" && navlink.url=== "approach"){
+                                            return null
                                         }
                                     return (
                                         <List className="text-lg" key={index}>

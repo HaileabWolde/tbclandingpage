@@ -11,7 +11,7 @@ const Software = ()=> {
        <HeroSection/>
        <Services/>
        {/*<Brands/>*/}
-       <Testimonials/>
+       {/*<Testimonials/>*/}
        {/*<Platform/>*/}
        <FAQ/>
        <NewsLetter/>

@@ -11,7 +11,7 @@ const ERP = ()=> {
         <HeroSection/>
         <Services/>
          {/*<Brands/>*/}
-        <Testimonials/>  
+        {/*<Testimonials/>*/}  
         {/*<Platform/>*/}
        
         <FAQ/>
