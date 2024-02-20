@@ -11,7 +11,7 @@ import ERP from "./components/pages/ERP";
 import Enginnering from "./components/pages/Engineering";
 import ManagingServices from "./components/pages/Services";
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../reduxToolkit/hooks";
+import { useAppDispatch} from "../reduxToolkit/hooks";
 import { getClients } from "../reduxToolkit/features/tbcClients/clientSlice";
 import Footer from "./components/organs/Footer";
 
@@ -19,7 +19,7 @@ function App() {
   const dispatch = useAppDispatch();
   const directory = useLocation();
 
-  const client = useAppSelector((state) => state.client.clientData);
+ // const client = useAppSelector((state) => state.client.clientData);
   
 
   useEffect(() => {

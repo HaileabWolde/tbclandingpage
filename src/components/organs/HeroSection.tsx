@@ -97,14 +97,14 @@ const HeroSection = () => {
               <motion.div
               whileInView={{x:[-100, 0], opacity: [0, 1]}}
               transition={{duration: 0.6,  delayChildren: 10}}
-              className="absolute top-[70px] md:top-[100px]  left-[80px] flex flex-col items-center justify-center gap-8 bg-white bg-opacity-80 w-[65%] h-[65%] md:w-[45%] px-2  md:h-[60%] lg:w-[50%]">
+              className="absolute top-[70px] md:top-[100px]  left-[80px] flex flex-col items-center justify-center gap-8 bg-white bg-opacity-80 w-[65%] h-[65%] md:w-[55%] px-2  md:h-[60%] xl:w-[50%]">
               <motion.div
                whileInView={{opacity:[0, 1]}}
                transition={{duration: 1, ease: 'easeInOut'}}
               >
               <Text
             as="h1"
-            className=" lg:text-7xl md:text-5xl text-2xl font-bold text-gradient bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent  font-serif w-full text-center"
+            className=" md:text-6xl xl:text-7xl  text-2xl font-bold text-gradient bg-gradient-to-r  from-[#4698CC]  to-[#4698CC] bg-clip-text text-transparent  font-serif w-full text-center"
            >
             {card.firstText}
           </Text>
