@@ -4,7 +4,7 @@ import Services from "../organs/Enginnering/Services"
 //import Testimonials from "../organs/Enginnering/Testimonials"
 import Platform from "../organs/Enginnering/Platform"
 import FAQ from "../organs/Enginnering/FAQ"
-import NewsLetter from "../organs/Enginnering/NewsLetter"
+import NewsLetter from "../organs/NewsLetter"
 const Enginnering = ()=> {
     return (
        <>

@@ -5,8 +5,6 @@ import Partners from "../organs/Partners"
 import Services from "../organs/Services"
 import Testimonials from "../organs/Testimonials"
 
-
-
 const Home = () => {
     return (
         <>

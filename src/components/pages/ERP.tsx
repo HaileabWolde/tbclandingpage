@@ -4,7 +4,7 @@ import Services from "../organs/ERP/Services";
 import Platform from "../organs/ERP/Platform";
 import FAQ from "../organs/ERP/FAQ";
 //import Testimonials from "../organs/ERP/Testimonials";
-import NewsLetter from "../organs/ERP/Contact";
+import NewsLetter from "../organs/NewsLetter";
 const ERP = ()=> {
     return (
         <>

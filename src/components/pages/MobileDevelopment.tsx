@@ -4,7 +4,7 @@ import Brands from "../organs/Mobile/MobileBrands";
 import Platform from "../organs/Mobile/MobilePlatforms";
 import FAQ from "../organs/Mobile/MobileFAQ";
 import Testimonials from "../organs/Mobile/Testimonials";
-import NewsLetter from "../organs/Mobile/Contact";
+import NewsLetter from "../organs/NewsLetter";
 const Mobile_Development = ()=>{
     return (
       <>

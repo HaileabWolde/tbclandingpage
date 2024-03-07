@@ -4,7 +4,7 @@ import Services from "../organs/Services/Services";
 //import Testimonials from "../organs/Services/Testimonals";
 //import Platform from "../organs/Services/Platforms";
 import FAQ from "../organs/Services/FAQ";
-import NewsLetter from "../organs/Services/Contact";
+import NewsLetter from "../organs/NewsLetter";
 const ManagingServices = ()=>{
     return (
        <>
