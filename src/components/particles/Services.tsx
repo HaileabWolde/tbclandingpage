@@ -7,7 +7,7 @@ export const ServiceTexts = {
             secondText: "We offer end-to-end process of conceptualizing, designing, building, testing, and maintaining custom software applications. And solutions tailored to specific business or individual needs."
         },
         {
-            firstText: "Technology Consultancy",
+            firstText: "It Consultancy & Training",
             secondText: "At TBC, we specialize in providing technical consultancy services to a diverse clientele, encompassing both local and international organizations. Our expertise is concentrated in three core areas: data collection and analysis, process automation, and standard operating procedure (SOP) designs. "
         },
         {

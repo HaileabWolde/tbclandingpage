@@ -16,7 +16,7 @@ const HeroSection = ()=> {
              <motion.div
           whileInView={{x:[-100, 0], opacity: [0, 1]}}
           transition={{duration: 0.6,  delayChildren: 10}} 
-          className="absolute top-[150px]  left-[60px] flex flex-col items-center gap-8 bg-white bg-opacity-80 w-[75%] md:w-[45%] justify-center h-[45%] md:h-[60%] xl:h-[80%]">
+          className="absolute top-[150px]  left-[60px] flex flex-col items-center gap-8 bg-white bg-opacity-80 w-[75%] md:w-[45%] justify-center py-5">
           <motion.div
            whileInView={{opacity:[0, 1]}}
            transition={{duration: 1, ease: 'easeInOut'}}

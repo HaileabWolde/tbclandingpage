@@ -53,7 +53,7 @@ const FAQ = () => {
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   transition={{ duration: 0.3 }}
-                  className="mb-6"
+                  className="mb-6 text-sm md:text-base"
                 >
                   {card.secondText}
                 </motion.div>

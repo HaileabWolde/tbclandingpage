@@ -36,7 +36,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services/Mobile Application Development" element={<Mobile_Development/>}/>
         <Route path="/services/Software Development" element={<Software/>}/>
-        <Route path="/services/Technology Consultancy" element={<Consulting/>}/>
+        <Route path="/services/It Consultancy & Training" element={<Consulting/>}/>
         <Route path="/services/ERP system" element={<ERP/>}/>
         <Route path="/services/Data Engineering" element={<Enginnering/>}/>
         <Route path="/services/Managing Services" element={<ManagingServices/>}/>

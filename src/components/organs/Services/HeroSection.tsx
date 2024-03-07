@@ -16,7 +16,7 @@ const HeroSection = ()=> {
                  <motion.div
               whileInView={{x:[-100, 0], opacity: [0, 1]}}
               transition={{duration: 0.6,  delayChildren: 10}} 
-              className="absolute top-[150px]  left-[60px] flex flex-col items-center gap-8 bg-white bg-opacity-80 w-[75%] md:w-[45%] justify-center h-[55%] md:h-[60%] xl:h-[80%]">
+              className="absolute top-[150px]  left-[60px] flex flex-col items-center gap-8 bg-white bg-opacity-80 w-[75%] md:w-[45%] justify-center py-5">
               <motion.div
                whileInView={{opacity:[0, 1]}}
                transition={{duration: 1, ease: 'easeInOut'}}
@@ -32,7 +32,7 @@ const HeroSection = ()=> {
               
           <Text
            
-           className="text-black md:text-lg text-sm  font-bold font-serif px-4 text-center"
+           className="text-black md:text-lg text-sm  font-light font-serif px-4 text-center"
          >
       Our Managed Services offer efficient IT management for networks, applications, infrastructure, and security. With proactive administration, we handle the intricacies while you focus on your core business. Trust us for reliable and secure systems.
          </Text>

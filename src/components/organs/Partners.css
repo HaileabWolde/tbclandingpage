@@ -1,0 +1,7 @@
+.card-wrapper {
+    margin-right: 10px; /* Adjust the right margin as desired */
+  }
+  
+  .card-wrapper:last-child {
+    margin-right: 0; /* Remove the right margin from the last card */
+  }

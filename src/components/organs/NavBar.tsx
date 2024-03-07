@@ -25,15 +25,15 @@ const NavBar = () => {
     const shouldHideElement = hiddenRoutes.includes(location.pathname)
 
     return (
-        <header className="w-full  bg-transparent overflow-hidden fixed z-50 top-0 left-0 ">
+        <header className="w-full bg-transparent overflow-hidden fixed z-50 top-0 left-0 ">
                 <motion.div
                 whileInView={{y: [-30, 0], opacity:[0, 1]}}
                 transition={{duration: 1, ease: 'easeInOut'}}
                 >
                     <nav className={`w-full navbar bg-[#f2f7fb] bg-opacity-80  lg:px-24 md:px-12 px-8 flex justify-between items-center border border-white border-opacity-100`}>
                     <Image as="a" href="/" className="md:h-24 h-20" image={Logo} alt="Logo" />
-                    <div className="lg:flex hidden items-center mr-[200px]">
-                        <ul className={`flex items-center justify-center gap-6`}>
+                    <div className="lg:flex hidden items-center ">
+                        <ul className={`flex items-center justify-center gap-4 xl:gap-6`}>
                             {
                                 NavLinks.map((navlink, index) => {
                                         if(shouldHideElement && navlink.url === "home"){
@@ -65,6 +65,7 @@ const NavBar = () => {
                    <HiMenuAlt4 onClick={()=> setToggle(true)}/>
                    {
                      toggle && (
+                       
                          <motion.div
                              whileInView={{x:[300, 0]}}
                             transition={{duration: 0.85, ease: 'easeInOut'}}
@@ -81,11 +82,10 @@ const NavBar = () => {
               </ul>  
        
             </motion.div>
-          )
-        }
-                   </div>
+          )}
+            </div>
                 
-                </nav>
+              </nav>
                 </motion.div>
         </header >
     )
