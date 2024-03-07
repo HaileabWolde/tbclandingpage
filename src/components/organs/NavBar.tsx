@@ -1,7 +1,7 @@
 import { useState, useCallback} from "react"
 import { Text } from "../atoms/Text";
 import {HiMenuAlt4, HiX} from 'react-icons/hi'
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Image } from "../atoms/Image";
 import Logo from "../../assets/tbc_logo/TBCONE.png"
 import {NavLinks } from "../particles/NavLinks"
@@ -96,8 +96,9 @@ const NavBar = () => {
                         </motion.div>
                     </div>
               </nav>
-              <div  className="app__navbar-menu pb-5">        
-                   {
+              <div  className="app__navbar-menu pb-5">   
+              <AnimatePresence>
+              {
                      toggle && (
                        
                          <motion.div
@@ -131,6 +132,8 @@ const NavBar = () => {
        
             </motion.div>
           )}
+                </AnimatePresence>
+                   
             </div>
                 </motion.div>
         </header >
