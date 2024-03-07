@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import { Button } from "../../atoms/Button";
 import { TestimonialTexts } from "../../particles/MobileData/MobileTestimonies"
 import { Card } from "../../molecules/Card";
-import ProfileImg1 from "../../../assets/Engida.png"
+import ProfileImg1 from "../../../assets/Engida.jpg"
 import ProfileImg2 from "../../../assets/tbc_logo/TBCONE.png"
 import ProfileImg3 from "../../../assets/Gafat.png"
 import ProfileImg4 from "../../../assets/Excellence.png"

@@ -2,7 +2,8 @@ import HeroSection from "../organs/Mobile/MobileHeroS";
 import Services from "../organs/Mobile/MobileService";
 import Brands from "../organs/Mobile/MobileBrands";
 import Platform from "../organs/Mobile/MobilePlatforms";
-import FAQ from "../organs/Mobile/MobileFAQ";
+import FAQ from "../templates/FAQ";
+import {DataOne} from "../particles/MobileData/MobilePlatforms"
 import Testimonials from "../organs/Mobile/Testimonials";
 import NewsLetter from "../organs/NewsLetter";
 const Mobile_Development = ()=>{
@@ -13,7 +14,7 @@ const Mobile_Development = ()=>{
       <Brands/>
       <Testimonials/>
      <Platform/> 
-      <FAQ/>
+      <FAQ DataOne={DataOne}/>
       <NewsLetter/>
      
       </>

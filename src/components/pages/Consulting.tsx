@@ -2,7 +2,8 @@ import HeroSection from "../organs/Consulting/HeroSection"
 import Brands from "../organs/Consulting/Brands"
 import Services from "../organs/Consulting/Services"
 import Platform from "../organs/Consulting/Platforms"
-import FAQ from "../organs/Consulting/FAQ"
+import FAQ from "../templates/FAQ"
+import { DataOne } from "../particles/ConsultacyData/FAQ"
 import Testimonials from "../organs/Consulting/Testimonals"
 import NewsLetter from "../organs/NewsLetter"
 const Consulting = ()=> {
@@ -13,7 +14,7 @@ const Consulting = ()=> {
             <Brands/>
             <Testimonials/>
             <Platform/>
-            <FAQ/>
+            <FAQ DataOne={DataOne}/>
             <NewsLetter/>
         </>
     )

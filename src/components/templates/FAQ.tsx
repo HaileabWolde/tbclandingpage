@@ -1,14 +1,22 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Text } from "../../atoms/Text";
-import { Button } from "../../atoms/Button";
+import { Text } from "../atoms/Text";
+import { Button } from "../atoms/Button";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
-import { DataOne } from "../../particles/ERPData/FAQ";
 
-const FAQ = () => {
+interface FAQProps {
+    DataOne: {
+    cards: {
+      firstText: string;
+      secondText: string;
+    }[];
+  };
+}
+
+const FAQ = ({ DataOne }: FAQProps) => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
-  const handleCardClick = (index:number) => {
+  const handleCardClick = (index: number) => {
     setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -34,8 +42,7 @@ const FAQ = () => {
                       animate={{ rotate: 180 }}
                       transition={{ duration: 0.3 }}
                     >
-                        <FaAngleDown />
-                      
+                      <FaAngleDown />
                     </motion.div>
                   ) : (
                     <motion.div
@@ -43,7 +50,7 @@ const FAQ = () => {
                       animate={{ rotate: 180 }}
                       transition={{ duration: 0.3 }}
                     >
-                     <FaAngleUp />
+                      <FaAngleUp />
                     </motion.div>
                   )}
                 </Button>

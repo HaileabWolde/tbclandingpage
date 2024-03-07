@@ -4,7 +4,7 @@ import {motion} from "framer-motion"
 import { Text } from "../../atoms/Text"
 import { Card } from "../../molecules/Card"
 import BrandOne from "../../../assets/tbc_logo/TBCONE.png"
-import BrandTwo from "../../../assets/Engida.png"
+import BrandTwo from "../../../assets/Engida.jpg"
 
 const Brands = ()=> {
     const renderServiceIcon = useCallback((element: number) => {

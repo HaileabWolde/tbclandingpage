@@ -3,8 +3,9 @@ import Services from "../organs/Enginnering/Services"
 //import Brands from "../organs/Enginnering/Brands"
 //import Testimonials from "../organs/Enginnering/Testimonials"
 import Platform from "../organs/Enginnering/Platform"
-import FAQ from "../organs/Enginnering/FAQ"
+import FAQ from "../templates/FAQ"
 import NewsLetter from "../organs/NewsLetter"
+import { DataOne } from "../particles/EnginneringData/FAQ"
 const Enginnering = ()=> {
     return (
        <>
@@ -14,7 +15,7 @@ const Enginnering = ()=> {
        {/*<Testimonials/>*/}
 
        <Platform/>
-       <FAQ/>
+       <FAQ DataOne={DataOne}/>
        <NewsLetter/>
        </>
     )
