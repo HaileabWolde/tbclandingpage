@@ -1,5 +1,5 @@
 import { useCallback } from "react"
-import { DataOne } from "../../particles/MobileData/MobileBrands"
+import { DataTwo } from "../../particles/MobileData/MobileBrands"
 import {motion} from "framer-motion"
 import { Text } from "../../atoms/Text"
 import { Card } from "../../molecules/Card"
@@ -30,7 +30,7 @@ const Brands = ()=> {
                 </Text>
                 <div className=" md:ml-[200px] w-[80%] flex flex-col gap-4 md:gap-0  md:flex-row items-center justify-center flex-wrap mx-auto">
                         {
-                            DataOne.cards.map((card, index)=> (
+                            DataTwo.cards.map((card, index)=> (
                                 <Card
                                 cardClass="w-[250px] h-[320px] flex flex-col justify-center items-center rounded-lg shadow-md bg-white py-4 "
                                 imageAlt="Card.image"

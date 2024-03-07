@@ -3,7 +3,7 @@ import { List } from "../../atoms/List";
 import { motion } from "framer-motion";
 import { Text } from "../../atoms/Text";
 import { FaCheckCircle, FaPuzzlePiece,  FaRocket, FaLock} from 'react-icons/fa';
-import { DataOne } from "../../particles/EnginneringData/DataSol";
+import { DataTwo } from "../../particles/EnginneringData/DataSol";
 const Services = ()=>{
 
     const renderIcons = useCallback((element: number) => {
@@ -36,7 +36,7 @@ const Services = ()=>{
                 <ul className="w-full md:ml-[200px] md:w-[80%]  mx-auto flex flex-col md:flex-row justify-between flex-wrap md:items-center pl-8 md:pl-0">
                     
                     {
-                        DataOne.cards.map((card, index)=> (
+                        DataTwo.cards.map((card, index)=> (
                           
                                
                                     <List className="flex gap-5  w-full md:w-[50%] mb-8" key={index}>

@@ -1,4 +1,4 @@
-export const DataOne =  {
+export const DataTwo =  {
     cards: [
          {
              firstText: "Expertise and Experience",

@@ -1,30 +1,18 @@
-import { useCallback } from "react"
 import {motion} from  "framer-motion"
-import { DataOne } from "../../particles/SoftwareData/SoftwareSolutions"
-import { Text } from "../../atoms/Text"
-import { Card } from "../../molecules/Card"
-import planning from "../../../assets/Approach/Planning.png"
-import team from "../../../assets/Approach/Team Allocation Two.png"
-import development from "../../../assets/Approach/Development.png"
-import deployment from "../../../assets/Approach Two/deployment.png"
-import Support from "../../../assets/Approach/Support.png"
-const Platform = ()=> {
-    const renderServiceIcon = useCallback((element: number) => {
-        switch (element) {
-            case 0:
-                return planning;
-            case 1:
-                return team;
-            case 2:
-                return development;
-            case 3:
-                return  Support;
-            case 4:
-                return deployment;
-            default:
-                return "";
-        }
-    }, []);
+import { Text } from "../atoms/Text"
+import { Card } from "../molecules/Card"
+
+interface FAQProps {
+    DataTwo: {
+        cardsOne: {
+      firstText: string;
+      secondText: string;
+    }[];
+  },
+  renderServiceIcon: (element: number) => string;
+}
+const Platform = ({ DataTwo, renderServiceIcon }: FAQProps)=> {
+  
     return (
         <section id="Our Approach"  className="w-full bg-[#edf2f8] md:py-[100px]">
             <motion.div
@@ -40,7 +28,7 @@ const Platform = ()=> {
        className=" w-full md:w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 flex-wrap px-4">
                 <div className=" flex flex-col md:flex-row gap-4 pb-8 md:pb-0">
                 {
-                    DataOne.cardsOne.map((card, index)=> (
+                    DataTwo.cardsOne.map((card, index)=> (
                        <div className="flex flex-col items-center w-full ">
                           <Card
                         cardClass="w-[130px] h-[130px] flex flex-col justify-center items-center  rounded-[50%] shadow-md bg-white p-3"
@@ -51,7 +39,7 @@ const Platform = ()=> {
                         >
 
                         </Card>
-                        <Text className=" mt-3 flex flex-col gap-2 ">
+                        <Text className=" mt-3    flex flex-col gap-2 ">
                             <h1 className="font-semibold font-serif text-center">{card.firstText}</h1>
                             <p className="font-serif text-lg px-3 md:px-0 md:text-sm ">{card.secondText}</p>
                         </Text>
