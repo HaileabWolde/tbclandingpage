@@ -96,51 +96,48 @@ const NavBar = () => {
                         </motion.div>
                     </div>
               </nav>
+                
+              <AnimatePresence>
               {
-                toggle && 
-                <div  className="app__navbar-menu pb-5">   
-                <AnimatePresence>
-                {
-                       toggle && (
-                         
-                           <motion.div
-                           initial={{ opacity: 0, height: 0 }}
-                           animate={{ opacity: 1, height: "auto" }}
-                           transition={{ duration: 0.3 }}
-                           exit={{ opacity: 0, height: 0 }}
-              >
-              
-                      <ul>
-               {
-                   NavLinks.map((navlink, index) => {
-                      if(shouldHideElement && navlink.url === "solutions"){
-                          return null;//skip also rendering this element
-                      }
-                      else if (shouldHideElement && (location.pathname === "/services/Software%20Development" || location.pathname === "/services/ERP%20system" || location.pathname === "/services/Data%20Engineering" || location.pathname === "/services/Managing%20Services")&&
-                      (navlink.url === "clients" || navlink.url === "testimonies")){
-                          return null;
-                      }
-                      else if(location.pathname === "/" && navlink.url=== "approach"){
-                          return null
-                      }
-                      return (
-                          <List className="text-lg flex gap-2 items-center" key={index}>
-                          <Text>{renderIcons(index)}</Text>
-                          <a  onClick={()=> setToggle(false)} href={`#${navlink.name}`}   className=" bg-gradient-to-r from-black to-red-500 text-transparent bg-clip-text relative inline-block  font-serif overflow-hidden  pt-2 pl-2 before:w-2 before:h-2 before:bg-[#FF9900] before:absolute before:top-2 before:-left-10 before:rounded-full before:transition-all before:duration-200 before:ease-in hover:before:left-0.5 after:w-0.5 after:h-3 after:bg-[#FF9900] after:absolute after:left-1 after:-top-10 hover:after:top-3.5 after:transition-all after:duration-200 after:ease-in">{navlink.name}</a>
-                      </List>
-                      )
-                   })}
-                </ul>  
-         
-              </motion.div>
-            )}
-                  </AnimatePresence>  
-              </div> }
-             
+                     toggle && (
+                        <div  className="app__navbar-menu pb-5">
+                             <motion.div
+                         initial={{ opacity: 0, height: 0 }}
+                         animate={{ opacity: 1, height: "auto" }}
+                         transition={{ duration: 0.3 }}
+                         exit={{ opacity: 0, height: 0 }}
+            >
+            
+                    <ul>
+             {
+                 NavLinks.map((navlink, index) => {
+                    if(shouldHideElement && navlink.url === "solutions"){
+                        return null;//skip also rendering this element
+                    }
+                    else if (shouldHideElement && (location.pathname === "/services/Software%20Development" || location.pathname === "/services/ERP%20system" || location.pathname === "/services/Data%20Engineering" || location.pathname === "/services/Managing%20Services")&&
+                    (navlink.url === "clients" || navlink.url === "testimonies")){
+                        return null;
+                    }
+                    else if(location.pathname === "/" && navlink.url=== "approach"){
+                        return null
+                    }
+                    return (
+                        <List className="text-lg flex gap-2 items-center" key={index}>
+                        <Text>{renderIcons(index)}</Text>
+                        <a  onClick={()=> setToggle(false)} href={`#${navlink.name}`}   className=" bg-gradient-to-r from-black to-red-500 text-transparent bg-clip-text relative inline-block  font-serif overflow-hidden  pt-2 pl-2 before:w-2 before:h-2 before:bg-[#FF9900] before:absolute before:top-2 before:-left-10 before:rounded-full before:transition-all before:duration-200 before:ease-in hover:before:left-0.5 after:w-0.5 after:h-3 after:bg-[#FF9900] after:absolute after:left-1 after:-top-10 hover:after:top-3.5 after:transition-all after:duration-200 after:ease-in">{navlink.name}</a>
+                    </List>
+                    )
+                 })}
+              </ul>  
+       
+            </motion.div>
+                        </div>
+                        )}
+                </AnimatePresence>
                 </motion.div>
         </header >
     )
 }
 
-export default NavBar
+export default NavBar;
 
