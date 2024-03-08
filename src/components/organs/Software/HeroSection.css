@@ -1,9 +1,0 @@
-.software {
-    height: 45%;
-    @media screen and (min-width: 700px) {
-        height: 60%;
-    }
-    @media screen and (min-width: 1024px){      
-        height: 80%
-    }
-}

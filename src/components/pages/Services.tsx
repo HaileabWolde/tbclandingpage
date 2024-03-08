@@ -1,9 +1,6 @@
 import { useCallback } from "react";
 import HeroSection from "../organs/Services/HeroSection";
 import Services from "../templates/Services";
-//import Brands from "../organs/Services/Brands";
-//import Testimonials from "../organs/Services/Testimonals";
-//import Platform from "../organs/Services/Platforms";
 import FAQ from "../templates/FAQ";
 import {DataOne} from "../particles/ServicesData/ServicesInfo"
 import { DataThree } from "../particles/ServicesData/ServicesSolutions";
@@ -29,9 +26,6 @@ const ManagingServices = ()=>{
        <>
        <HeroSection/>
        <Services DataThree={DataThree} renderIcons={renderIcons} word={word}/>
-        {/*<Brands/>*/}
-      {/*<Testimonials/>*/} 
-       {/*<Platform/>*/}
        <FAQ DataOne={DataOne}/>
        <NewsLetter/>
        </>

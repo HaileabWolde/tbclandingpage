@@ -1,13 +1,11 @@
 import { useCallback } from "react"
 import HeroSection from "../organs/Software/HeroSection"
-//import Brands from "../organs/Software/Brands"
 import Services from "../templates/Services"
 import Platform from "../templates/Platforms"
 import FAQ from "../templates/FAQ"
 import {DataOne} from "../particles/SoftwareData/FAQ"
 import {DataTwo} from "../particles/SoftwareData/SoftwareSolutions"
 import {DataThree} from "../particles/SoftwareData/SoftwareInfo"
-//import Testimonials from "../organs/Software/Testimonals"
 import NewsLetter from "../organs/NewsLetter"
 import planning from "../../assets/Approach/Planning.png"
 import team from "../../assets/Approach/Team Allocation Two.png"
@@ -51,8 +49,6 @@ const Software = ()=> {
        <>
        <HeroSection/>
        <Services DataThree={DataThree}  renderIcons={renderIcons} word={word}/>
-       {/*<Brands/>*/}
-       {/*<Testimonials/>*/}
        <Platform DataTwo={DataTwo} renderServiceIcon={renderServiceIcon}/>
        <FAQ  DataOne={DataOne}/>
        <NewsLetter/>

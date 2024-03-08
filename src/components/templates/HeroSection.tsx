@@ -1,16 +1,22 @@
 import {motion} from "framer-motion";
-import {Card} from "../../molecules/Card";
-import { Text } from "../../atoms/Text";
-import Consulting from "../../../assets/Consulting.jpg"
-import { Button } from "../../atoms/Button";
+import {Card} from "../molecules/Card";
+import { Text } from "../atoms/Text";
+import { Button } from "../atoms/Button";
+interface FAQProps {
+    Hero: {
+        firstText: string;
+        secondText: string;
+    },
+   profile: string
+}
 
-const HeroSection = ()=> {
+const HeroSection = ({Hero, profile}: FAQProps)=> {
     return (
         <div id="HOME" className="w-full overflow-hidden mt-[90px]">
         <Card
         cardClass="w-full flex overflow-hidden"
         imageAlt="Consulting"
-        imageSrc={Consulting}
+        imageSrc={profile}
         imageWrapperClass="w-full overflow-hidden h-[450px] md:h-[600px]"
         cover="object-fit"
         >
@@ -26,7 +32,7 @@ const HeroSection = ()=> {
         as="h1"
         className=" lg:text-5xl  text-xl font-bold text-gradient bg-gradient-to-r  from-[#4797C6] to-[#4797C6] bg-clip-text text-transparent  font-serif w-full text-center"
        >
-       Technology Consultancy
+      {Hero.firstText}
       </Text>
       
           </motion.div>
@@ -35,7 +41,7 @@ const HeroSection = ()=> {
        
        className="text-black md:text-lg text-sm  font-light  font-serif px-4 text-center"
      >
-   At TBC, your trusted technology consultancy. We specialize in data analysis, process automation, and SOP design for a diverse clientele, both local and international. Let us help you unlock your organization's potential.
+        {Hero.secondText}
      </Text>
      <Button
      

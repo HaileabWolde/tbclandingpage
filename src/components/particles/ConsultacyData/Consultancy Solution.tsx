@@ -18,3 +18,7 @@ export const DataThree = {
         }
     ]
 }
+export const Hero = {
+    firstText: "Technology Consultancy",
+    secondText: " At TBC, your trusted technology consultancy. We specialize in data analysis, process automation, and SOP design for a diverse clientele, both local and international. Let us help you unlock your organization's potential."
+};

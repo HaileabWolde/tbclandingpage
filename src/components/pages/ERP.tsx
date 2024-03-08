@@ -7,7 +7,6 @@ import FAQ from "../templates/FAQ";
 import { DataOne } from "../particles/ERPData/FAQ";
 import { DataTwo } from "../particles/ERPData/ERPSolution";
 import { DataThree } from "../particles/ERPData/ERPInfo";
-//import Testimonials from "../organs/ERP/Testimonials";
 import NewsLetter from "../organs/NewsLetter";
 import integration from "../../assets/Approach/Integration.png"
 import team from "../../assets/Approach Two/Research.png"
@@ -51,8 +50,6 @@ const ERP = ()=> {
         <>
         <HeroSection/>
         <Services DataThree={DataThree} renderIcons={renderIcons} word={word} />
-         {/*<Brands/>*/}
-        {/*<Testimonials/>*/}  
         <Platform DataTwo={DataTwo} renderServiceIcon={renderServiceIcon}/>
         <FAQ DataOne={DataOne}/>
         <NewsLetter/>
