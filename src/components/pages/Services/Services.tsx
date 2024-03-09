@@ -1,11 +1,9 @@
 import { useCallback } from "react";
-import HeroSection from "../organs/Services/HeroSection";
-import Services from "../templates/Services";
-import FAQ from "../templates/FAQ";
-import {DataOne} from "../particles/ServicesData/ServicesInfo"
-import { DataThree } from "../particles/ServicesData/ServicesSolutions";
-import NewsLetter from "../organs/NewsLetter";
-import { FaBrain,  FaBullseye, FaShieldAlt, FaMoneyBill } from 'react-icons/fa';
+import {
+    HeroSection, Services, FAQ, DataOne,
+    DataThree, Hero, NewsLetter, FaBrain,
+    FaBullseye, FaShieldAlt, FaMoneyBill,ServicesOne,
+  } from "./ServicesImage";
 const ManagingServices = ()=>{
   const renderIcons = useCallback((element: number) => {
     switch (element) {
@@ -24,7 +22,7 @@ const ManagingServices = ()=>{
     const word = "Managing Services"
     return (
        <>
-       <HeroSection/>
+       <HeroSection Hero={Hero} profile={ServicesOne}/>
        <Services DataThree={DataThree} renderIcons={renderIcons} word={word}/>
        <FAQ DataOne={DataOne}/>
        <NewsLetter/>

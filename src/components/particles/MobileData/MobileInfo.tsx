@@ -10,3 +10,7 @@ export const DataFour = {
       }
     ],
 }
+export const Hero = {
+  firstText: "Mobile App Development",
+  secondText: "TBC delivers future-focused custom mobile app development solutions. Backed by mobile app developers, our mobile app company strives to cater to businesses’ simple and complex challenges through innovative mobile applications."
+}

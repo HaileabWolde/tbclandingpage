@@ -1,19 +1,11 @@
 import { useCallback } from "react"
-import HeroSection from "../organs/ERP/HeroSection";
-//import Brands from "../organs/ERP/Brands";
-import Services from "../templates/Services";
-import Platform from "../templates/Platforms";
-import FAQ from "../templates/FAQ";
-import { DataOne } from "../particles/ERPData/FAQ";
-import { DataTwo } from "../particles/ERPData/ERPSolution";
-import { DataThree } from "../particles/ERPData/ERPInfo";
-import NewsLetter from "../organs/NewsLetter";
-import integration from "../../assets/Approach/Integration.png"
-import team from "../../assets/Approach Two/Research.png"
-import cleaning from "../../assets/Approach/Cleaning.png"
-import storage from "../../assets/Approach/Storage.png"
-import charts from "../../assets/Approach/Charts.png"
-import { FaCog, FaSlidersH, FaLink, FaChartLine } from 'react-icons/fa';
+import {
+    integration, team, cleaning, storage,
+    charts, ERPOne, HeroSection, Services,
+  Platform, FAQ, DataOne, DataTwo,
+  DataThree, Hero, NewsLetter,
+  FaCog, FaSlidersH, FaLink, FaChartLine
+  } from "./ERPImage"; // Import all the images from the new file
 const ERP = ()=> {
     const renderServiceIcon = useCallback((element: number) => {
         switch (element) {
@@ -48,7 +40,7 @@ const ERP = ()=> {
     const word = "ERP System"
     return (
         <>
-        <HeroSection/>
+        <HeroSection Hero={Hero} profile={ERPOne}/>
         <Services DataThree={DataThree} renderIcons={renderIcons} word={word} />
         <Platform DataTwo={DataTwo} renderServiceIcon={renderServiceIcon}/>
         <FAQ DataOne={DataOne}/>

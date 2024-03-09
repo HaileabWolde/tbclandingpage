@@ -18,3 +18,7 @@ export const DataThree = {
         }
     ],
 }
+export const Hero = {
+    firstText: "Software App Development",
+    secondText: "We offer end-to-end process of conceptualizing, designing, building, testing, and maintaining custom software applications and solutions tailored to specific business or individual needs."
+  }

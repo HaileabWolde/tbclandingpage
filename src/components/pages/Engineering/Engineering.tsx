@@ -1,18 +1,11 @@
 import { useCallback } from "react"
-import HeroSection from "../organs/Enginnering/HeroSection"
-import Services from "../templates/Services"
-import Platform from "../templates/Platforms"
-import FAQ from "../templates/FAQ"
-import NewsLetter from "../organs/NewsLetter"
-import { DataOne } from "../particles/EnginneringData/FAQ"
-import { DataTwo } from "../particles/EnginneringData/DataSol"
-import { DataThree } from "../particles/EnginneringData/EnginneringInfo"
-import integration from "../../assets/Approach/Integration.png"
-import team from "../../assets/Approach Two/Research.png"
-import cleaning from "../../assets/Approach/Cleaning.png"
-import storage from "../../assets/Approach/Storage.png"
-import charts from "../../assets/Approach/Charts.png"
-import { FaCheckCircle, FaPuzzlePiece,  FaRocket, FaLock} from 'react-icons/fa';
+import {
+    integration, team, cleaning, storage,
+    charts, EnginneringOne, DataOne, DataTwo,
+    DataThree, Hero, HeroSection, Services,
+    Platform, FAQ, NewsLetter, FaCheckCircle, 
+    FaPuzzlePiece,  FaRocket, FaLock
+  } from "./EngineeringImage"; // Import all the images from the new file
 const Enginnering = ()=> {
     const renderServiceIcon = useCallback((element: number) => {
         switch (element) {
@@ -48,7 +41,7 @@ const Enginnering = ()=> {
     const word = "Enginnering Project"
     return (
        <>
-       <HeroSection/>
+       <HeroSection Hero={Hero} profile={EnginneringOne}/>
        <Services DataThree={DataThree} renderIcons={renderIcons} word={word}/>
        <Platform DataTwo={DataTwo} renderServiceIcon={renderServiceIcon}/>
        <FAQ DataOne={DataOne}/>

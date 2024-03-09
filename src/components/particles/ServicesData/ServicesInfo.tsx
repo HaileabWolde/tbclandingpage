@@ -22,3 +22,7 @@ export const DataOne = {
         }
     ]
 }
+export const Hero = {
+    firstText: "Managing Services",
+    secondText: "Our Managed Services offer efficient IT management for networks, applications, infrastructure, and security. With proactive administration, we handle the intricacies while you focus on your core business. Trust us for reliable and secure systems."
+  }

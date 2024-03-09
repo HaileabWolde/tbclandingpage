@@ -18,3 +18,8 @@ export const DataThree = {
         }
     ],
 }
+
+export const Hero = {
+    firstText: "ERP System",
+    secondText: "Enhance Business Operations with Comprehensive Enterprise resource planning (ERP) Software in Ethiopia Streamlining Data. Integrated and implementing ERP software is the key to unlocking your team’s full potential. "
+}

@@ -18,3 +18,7 @@ export const DataThree = {
         }
    ],
 }
+export const Hero = {
+    firstText: "Data Enginnering",
+    secondText: "At TBC, our Data Engineering services are second to none. We cover the entire spectrum, transforming raw data into robust pipelines. Crafting tools for seamless data access, ensuring data quality, integrating diverse data sources, and helping you harness invaluable insights."
+}
