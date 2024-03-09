@@ -39,5 +39,5 @@ header {
     transition: fill 0.3s; /* Add transition effect to the fill property */
   }
   .app__navbar-menuOne:hover svg {
-    fill: red; /* Change the fill color when hovering over the element */
+    fill: #FF9800; /* Change the fill color when hovering over the element */
   }
