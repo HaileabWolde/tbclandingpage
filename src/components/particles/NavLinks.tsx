@@ -17,6 +17,14 @@ export const NavLinks = [
         url: "clients"
     },
     {
+        name: "APPROACH",
+        url: "approach"
+    },
+    {
+        name: "FAQ",
+        url: "faq"
+    },
+    {
         name: "ABOUT US",
         url: "/"
     },
@@ -24,9 +32,6 @@ export const NavLinks = [
         name: "CONTACT",
         url: "/"
     },
-    {
-        name: "Our Approach",
-        url: "approach"
-    },
+  
 
 ];

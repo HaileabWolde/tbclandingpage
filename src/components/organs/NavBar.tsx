@@ -8,7 +8,7 @@ import {NavLinks } from "../particles/NavLinks"
 import { List } from "../atoms/List";
 import { BsPuzzleFill } from 'react-icons/bs';
 import { AiOutlineComment } from 'react-icons/ai';
-import { FaUsers, FaHome } from 'react-icons/fa';
+import { FaUsers, FaHome,  FaQuestionCircle } from 'react-icons/fa';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import { MdTimeline } from 'react-icons/md';
@@ -44,8 +44,10 @@ const NavBar = () => {
             case 4:
                 return <BsInfoCircleFill size={24} color="#4797C6"/>;
             case 5:
-                return <FiMail size={24} color="#4797C6"/>
+                return < FaQuestionCircle size={24} color="#4797C6"/>;
             case 6:
+                return <FiMail size={24} color="#4797C6"/>
+            case 7:
                 return <MdTimeline size={24} color="#4797C6"/>
             default:
                 return "";
@@ -73,6 +75,9 @@ const NavBar = () => {
                                             return null;
                                         }
                                         else if(location.pathname === "/" && navlink.url=== "approach"){
+                                            return null
+                                        }
+                                        else if(location.pathname === "/" && navlink.url === "faq"){
                                             return null
                                         }
                                     return (
@@ -119,6 +124,9 @@ const NavBar = () => {
                         return null;
                     }
                     else if(location.pathname === "/" && navlink.url=== "approach"){
+                        return null
+                    }
+                    else if(location.pathname === "/" && navlink.url === "faq"){
                         return null
                     }
                     return (

@@ -14,7 +14,7 @@ interface FAQProps {
 const Platform = ({ DataTwo, renderServiceIcon }: FAQProps)=> {
   
     return (
-        <section id="Our Approach"  className="w-full bg-[#edf2f8] md:py-[100px]">
+        <section id="APPROACH"  className="w-full bg-[#edf2f8] md:py-[100px]">
             <motion.div
             whileInView={{opacity: [0, 1]}}
             transition={{duration: 0.6,  ease: 'easeInOut'}}
