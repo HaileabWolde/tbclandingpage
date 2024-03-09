@@ -11,7 +11,19 @@ import ServicesOne from "../../../assets/Service.jpeg";
 export {
   HeroSection, Services, FAQ,
   DataOne, DataThree, Hero,
-  NewsLetter, FaBrain, FaBullseye,
-  FaShieldAlt, FaMoneyBill,
-  ServicesOne,
+  NewsLetter, ServicesOne,
 };
+export const renderIcons = (element: number) => {
+  switch (element) {
+      case 0:
+          return <FaBrain size={15} color="currentColor" />;
+      case 1:
+          return <FaMoneyBill  size={15} color="currentColor"  />;
+      case 2:
+          return <FaBullseye size={15} color="currentColor" />;
+      case 3:
+          return <FaShieldAlt size={15} color="currentColor"/>;
+      default:
+          return "";
+  }
+}

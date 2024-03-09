@@ -29,9 +29,60 @@ export {
     HeroSection , Services, Brands,
     Platform, FAQ, DataTwo, DataOne,
     DataThree, DataFour, Hero ,TestimonialTexts,
-    Testimonials, NewsLetter, planning, team,
-    development, deployment, Support, BrandOne,
-    BrandTwo, ProfileImg1, ProfileImg2, ProfileImg3,
-    ProfileImg4,MobileApp,
-    FaStar, FaCog, FaLink, FaWrench
+    Testimonials, NewsLetter, MobileApp,
+   
+}
+export const renderServiceIcon = (element: number) => {
+    switch (element) {
+        case 0:
+            return planning;
+        case 1:
+            return team;
+        case 2:
+            return development;
+        case 3:
+            return  Support;
+        case 4:
+            return deployment;
+        default:
+            return "";
+    }
+}
+export const renderIcons = (element: number) => {
+    switch (element) {
+        case 0:
+            return <FaStar size={15} color="currentColor"/>;
+        case 1:
+            return <FaCog size={15} color="currentColor"/>;
+        case 2:
+            return <FaLink size={15} color="currentColor"/>;
+        case 3:
+            return <FaWrench size={15} color="currentColor"/>;
+        default:
+            return "";
+    }
+}
+export const renderBrandsIcon = (element: number) => {
+    switch (element) {
+        case 0:
+            return BrandOne;
+        case 1:
+            return BrandTwo;
+        default:
+            return "";
+    }
+}
+export const renderProfileImg = (element: number) => {
+    switch (element) {
+        case 0:
+            return ProfileImg2;
+        case 1:
+            return ProfileImg1;
+        case 2:
+            return ProfileImg3;
+        case 3:
+            return ProfileImg4;
+        default:
+            return "";
+    }
 }
