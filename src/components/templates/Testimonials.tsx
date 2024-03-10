@@ -106,9 +106,8 @@ const Testimonials = ({TestimonialTexts, renderProfileImg}: FAQProps)=> {
               className=" flex w-full  justify-center mt-8"
               >
               {
-                  TestimonialTexts.feedBacks.map((item, index)=> (
-                    <Button
-                    key={item}
+                  TestimonialTexts.feedBacks.map((_, index)=> (
+                    <Button      
                     className={`w-2 h-2 rounded-[50%] m-1 cursor-pointer ${
                         activeSlide === index ? "bg-[#4698CC] rounded-lg pl-[14px] pr-[14px]" : " bg-gradient-to-r from-red-200 to-red-500"
                       } transition-colors duration-200 ease-in-out p-[6px]`}
