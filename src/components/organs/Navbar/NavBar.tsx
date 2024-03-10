@@ -1,19 +1,10 @@
-import { useState, useCallback} from "react"
-import { Text } from "../atoms/Text";
-import {HiMenuAlt4, HiX} from 'react-icons/hi'
-import { motion, AnimatePresence } from "framer-motion";
-import { Image } from "../atoms/Image";
-import Logo from "../../assets/tbc_logo/TBCONE.png"
-import {NavLinks } from "../particles/NavLinks"
-import { List } from "../atoms/List";
-import { BsPuzzleFill } from 'react-icons/bs';
-import { AiOutlineComment } from 'react-icons/ai';
-import { FaUsers, FaHome,  FaQuestionCircle } from 'react-icons/fa';
-import { BsInfoCircleFill } from 'react-icons/bs';
-import { FiMail } from 'react-icons/fi';
-import { MdTimeline } from 'react-icons/md';
+import { useState} from "react"
 import "./Nabar.css"
 import { useLocation } from "react-router-dom";
+import { Text , HiMenuAlt4, HiX,
+    Image,
+    Logo,  NavLinks, List, renderIcons} from "./index"
+import { motion, AnimatePresence } from "framer-motion";
 const NavBar = () => {
     const location = useLocation();
     const [toggle, setToggle] = useState<boolean>(false)
@@ -30,29 +21,6 @@ const NavBar = () => {
 
     //Check if the current route matches any of the hidden routes
     const shouldHideElement = hiddenRoutes.includes(location.pathname)
-    console.log(shouldHideElement)
-    const renderIcons = useCallback((element: number) => {
-        switch (element) {
-            case 0:
-                return <FaHome  size={24} color="#4797C6"/>;
-            case 1:
-                return <BsPuzzleFill size={24} color="#4797C6"/>;
-            case 2:
-                return <AiOutlineComment size={24} color="#4797C6"/>;
-            case 3:
-                return <FaUsers size={24} color="#4797C6"/>;
-            case 4:
-                return <BsInfoCircleFill size={24} color="#4797C6"/>;
-            case 5:
-                return < FaQuestionCircle size={24} color="#4797C6"/>;
-            case 6:
-                return <FiMail size={24} color="#4797C6"/>
-            case 7:
-                return <MdTimeline size={24} color="#4797C6"/>
-            default:
-                return "";
-        }
-    }, [])
 
     return (
         <header className="w-full bg-transparent overflow-hidden fixed z-50 top-0 left-0 ">

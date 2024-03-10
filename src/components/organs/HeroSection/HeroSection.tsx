@@ -1,18 +1,9 @@
-import { useCallback, useRef } from "react";
+import {useRef } from "react";
 import Slider from "react-slick";
 import {motion} from "framer-motion"
-import {CaretLeft, CaretRight } from "@phosphor-icons/react";
-import TESTSIX from "../../assets/TESTSIX.jpeg";
-import TESTSEVEN from "../../assets/TESTSEVEN.jpeg"
-import TESTEIGHT from '../../assets/Software Development Test.jpg'
-import TESTNINE from "../../assets/TESTNINE.jpg"
-import TESTTEN from "../../assets/Software Development_result.png"
-import { Text } from "../atoms/Text";
-import { Card } from "../molecules/Card";
-import { Button } from "../atoms/Button";
-import {Chat } from "@phosphor-icons/react";
-import { DataOne } from "../particles/TBC Soltuion";
-
+import {renderProfileImg, CaretLeft, CaretRight,
+  Text, Card, Button, Chat,
+  DataOne } from "./index"
 const HeroSection = () => {
   const sliderRef = useRef<Slider | null>();
 
@@ -36,23 +27,6 @@ const HeroSection = () => {
     swipeToSlide: true, // Allow swiping on mobile devices
     adaptiveHeight: true, // Adjust the height of the carousel to the current slide
 };
-
-  const renderProfileImg = useCallback((element: number) => {
-    switch (element) {
-      case 0:
-        return TESTSIX;
-      case 1:
-        return TESTSEVEN;
-      case 2:
-        return TESTEIGHT;
-      case 3:
-        return TESTNINE;
-      case 4:
-        return TESTTEN;
-      default:
-        return "";
-    }
-  }, []);
 
   return (
     <div id="HOME" className="w-full mt-[90px]">

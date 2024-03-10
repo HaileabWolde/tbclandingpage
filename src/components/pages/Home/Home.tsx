@@ -1,9 +1,9 @@
-import BookingSteps from "../../organs/BookingSteps"
-import HeroSection from "../../organs/HeroSection"
+import BookingSteps from "../../organs/AboutSection/About Us"
+import HeroSection from "../../organs/HeroSection/HeroSection"
 import NewsLetter from "../../templates/NewsLetter"
-import Partners from "../../organs/Partners"
-import Services from "../../organs/Services"
-import Testimonials from "../../organs/Testimonials"
+import Partners from "../../organs/Clients/Clients"
+import Services from "../../organs/Services/Services"
+import Testimonials from "../../organs/Testimonies/Testimonials"
 
 const Home = () => {
     return (

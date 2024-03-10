@@ -2,7 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { animateScroll } from "react-scroll";
-import NavBar from "./components/organs/NavBar";
+import NavBar from "./components/organs/Navbar/NavBar";
 import Home from "./components/pages/Home/Home";
 import Mobile_Development from "./components/pages/Mobile/MobileDevelopment";
 import Software from "./components/pages/Software/Software Development";
@@ -13,7 +13,7 @@ import ManagingServices from "./components/pages/Services/Services";
 import { useEffect } from "react";
 import { useAppDispatch} from "../reduxToolkit/hooks";
 import { getClients } from "../reduxToolkit/features/tbcClients/clientSlice";
-import Footer from "./components/organs/Footer";
+import Footer from "./components/organs/Footer/Footer";
 
 function App() {
   const dispatch = useAppDispatch();

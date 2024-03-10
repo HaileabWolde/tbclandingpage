@@ -1,26 +1,8 @@
-import { useCallback } from 'react'
 import {motion} from "framer-motion"
-import { List } from '../atoms/List'
-import { Text } from '../atoms/Text'
-import { BookingStepsTexts } from '../particles/MIssion'
-import { Eye, Lightbulb} from '@phosphor-icons/react'
-import { Card } from '../molecules/Card'
-import CardImage1 from "../../assets/RocketB.jpg"
-
-
+import { List, Text, BookingStepsTexts, Card,
+    CardImage1, renderIcons} from "./index"
 const BookingSteps = () => {
-
-    const renderIcons = useCallback((element: number) => {
-        switch (element) {
-            case 0:
-                return <Eye size={15} color="currentColor" weight="fill" />;
-            case 1:
-                return <Lightbulb size={15} color="currentColor" weight="fill" />;
-            default:
-                return "";
-        }
-    }, [])
-
+    
     return (
         <section id="ABOUT US" 
         className="w-full bg-[#edf2f8] flex flex-col items-start justify-center relative lg:px-24 md:px-10 px-6 py-12">

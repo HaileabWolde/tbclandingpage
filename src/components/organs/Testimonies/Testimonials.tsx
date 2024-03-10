@@ -1,77 +1,20 @@
-import {Text} from "../atoms/Text";
-import { useState } from "react";
-import { useCallback, useRef } from "react";
+import { useState, useRef } from "react";
+import { Button, TestimonialTexts, Card,
+  FaQuoteLeft, FaQuoteRight, Text, renderProfileImg,  settings} from "./index"
 import Slider from "react-slick";
-import { Button } from "../atoms/Button";
-import { TestimonialTexts } from "../particles/Testimonies"
-import { Card } from "../molecules/Card";
-import ProfileImg1 from "../../assets/Engida.jpg"
-import ProfileImg2 from "../../assets/tbc_logo/TBCONE.png"
-import ProfileImg3 from "../../assets/Gafat.png"
-import ProfileImg4 from "../../assets/Excellence.png"
-import {  FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-
 const Testimonials = ()=> {
     const sliderRef = useRef<Slider | null>();
     const [activeSlide, setActiveSlide] = useState(0);
     const [middleSlide, setMiddleSlide] = useState(1);
-    // Function for next button
-    
-
-    // Slider settings
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        swipeToSlide: true, // Allow swiping on mobile devices
-        adaptiveHeight: true,
-        responsive: [
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              initialSlide: 2,
-              dots: false,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false,
-            },
-          },
-        ] // Adjust the height of the carousel to the current slide
-
-    };
-
-    const renderProfileImg = useCallback((element: number) => {
-        switch (element) {
-            case 0:
-                return ProfileImg2;
-            case 1:
-                return ProfileImg1;
-            case 2:
-                return ProfileImg3;
-            case 3:
-                return ProfileImg4;
-            default:
-                return "";
-        }
-    }, [])
     const Checkup = (index:number)=> {
-        if(index === 4){
-            const newINDEX = 0
-            return setMiddleSlide( newINDEX)
-        }
-        else{
-            return setMiddleSlide(index)
-        }
-    }
-   
+      if(index === 4){
+          const newINDEX = 0
+          return setMiddleSlide( newINDEX)
+      }
+      else{
+          return setMiddleSlide(index)
+      }
+  }
     return (
         <section id="TESTIMONIES" className="w-full">
           <main className="w-full  bg-gradient-to-b from-gray-100 to-gray-100 py-[40px] md:py-[100px]">
