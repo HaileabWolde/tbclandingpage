@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import { partners1, partners2, partners3,
   partner4, Text, Card, settings} from "./index"
+import "./Clients.css"
 const Partners = () => {
   return (
     <section id= "CLIENTS" className="w-full lg:px-9 px-1  bg-gradient-to-r from-[#37306B] to-[#19376D]">

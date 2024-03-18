@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { Button, TestimonialTexts, Card,
   FaQuoteLeft, FaQuoteRight, Text, renderProfileImg,  settings} from "./index"
 import Slider from "react-slick";
+
 const Testimonials = ()=> {
     const sliderRef = useRef<Slider | null>();
     const [activeSlide, setActiveSlide] = useState(0);
