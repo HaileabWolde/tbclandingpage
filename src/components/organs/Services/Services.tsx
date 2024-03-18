@@ -51,7 +51,7 @@ const Services = () => {
                     {ServiceTexts.secondText}
                 </Text>
 
-                <div className="w-[80%] h-auto grid lg:grid-cols-3 md:grid-cols-1 lg:gap-7 md:gap-10 gap-7 my-12 z-20 mx-auto">
+                <div className="w-[80%] h-auto grid lg:grid-cols-3  lg:gap-7 md:gap-10 gap-7 my-12 z-20 mx-auto">
                     {
                         ServiceTexts.cards.map((card, index) => (
                             <Link to={`/services/${card.firstText}`} >
