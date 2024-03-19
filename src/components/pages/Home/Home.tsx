@@ -7,7 +7,7 @@ import Testimonials from "../../organs/Testimonies/Testimonials"
 
 const Home = () => {
     return (
-        <>
+        <div>
             <HeroSection />
             <Services />
             <BookingSteps />
@@ -17,7 +17,7 @@ const Home = () => {
             <Partners />
             <hr />
             <NewsLetter />
-        </>
+        </div>
     )
 }
 
