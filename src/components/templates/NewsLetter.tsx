@@ -78,7 +78,7 @@ const NewsLetter = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5, ease: 'easeInOut' }}
-                className=" bg-[#D4EDDA]  "
+                className=" bg-[#D4EDDA]"
               >
                 {Alerttype(alertColor, alertMessage)}
               </motion.div>
@@ -115,7 +115,7 @@ const NewsLetter = () => {
             <textarea
               placeholder="please add Your Message here"
               name="user_subject"
-              className="p-10 md:p-4  text-xs md:text-sm border rounded-lg  w-full h-[40%] shadow-lg outline-none"
+              className="uppercase p-10 md:p-4  text-xs md:text-sm border rounded-lg  w-full h-[40%] shadow-lg outline-none"
               required
             />
             <Text className="w-full flex flex-col items-center">
