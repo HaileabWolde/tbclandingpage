@@ -55,12 +55,14 @@ const FAQ = ({ DataOne }: FAQProps) => {
                   )}
                 </Button>
               </Text>
+             
               {expandedIndex === index && (
                 <motion.div
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   transition={{ duration: 0.3 }}
                   className="mb-6 text-sm md:text-base"
+                 
                 >
                   {card.secondText}
                 </motion.div>

@@ -40,7 +40,7 @@ const Testimonials = ()=> {
                     : " bg-opacity-100 md:opacity-50 md:pointer-events-none"} h-[400px] pt-6 shadow-md border-solid border-2  bg-white rounded-lg`}
                   imageAlt="Hello"
                   imageSrc={renderProfileImg(index)}
-                  imageWrapperClass="w-[35%] h-[35%] overflow-hidden mx-auto"
+                  imageWrapperClass="w-[35%] h-[35%] sm:w-[40%] sm:h-[40%] overflow-hidden mx-auto"
                   cover="object-fit"
                 >
                     <Text
@@ -53,7 +53,7 @@ const Testimonials = ()=> {
                         <Text>
                       
                           <FaQuoteLeft className={`${middleSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
-                            <h4 className="font-serif text-xs md:text-sm">{feedback.text}</h4>
+                            <h4 className="font-serif text-xs ">{feedback.text}</h4>
                             <div className="w-full flex flex-col items-end">
                             <FaQuoteRight className={`${middleSlide === index ? 'text-gray-600': 'text-gray-300'} mb-2`}/>
                             </div>
